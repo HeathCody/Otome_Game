@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
+  m_Name: Con Point Netral  Char 1 & 3
+  m_EditorClassIdentifier: 
+  Judul: Point Netral  Char 1 & 3
+  sprBackgroundDialogue: {fileID: 21300000, guid: 77920d5733299b7418a2af17da8c0c2a, type: 3}
+  ListDialogue:
+  - {fileID: 11400000, guid: 23d1b07c2ac12254da14086f22a7d039, type: 2}
+  - {fileID: 11400000, guid: 2943337bfeafb8747b389949906dab9f, type: 2}
+  - {fileID: 11400000, guid: 605b276ece776ae4a8cc31ee73ce942a, type: 2}
+  eventEndDialogue: 2
+  nextConversation: {fileID: 11400000, guid: 6988678e7d4ac444fa1893ad431f67b2, type: 2}
+  openChoice: {fileID: 11400000, guid: a68ce176fc928da4f99bf8b06ac2759d, type: 2}
+  spiteCinematic: {fileID: 0}

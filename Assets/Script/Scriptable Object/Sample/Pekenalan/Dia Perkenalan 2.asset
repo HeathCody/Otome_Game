@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e0f883340298643b2d6ea350b089ad, type: 3}
+  m_Name: Dia Perkenalan 2
+  m_EditorClassIdentifier: 
+  Judul: Pekenalaan Sunny
+  Section: 2
+  BgDialogue: {fileID: 0}
+  ListCharTalk:
+  - SprTalkChar: {fileID: -755032870, guid: 5e29c6b31a9e76d40811e93dfd4aed8a, type: 3}
+    TalkCharPos: 1
+    IsTalk: 0
+  - SprTalkChar: {fileID: 1780063813, guid: f98fdb49aa589574cba851eef0ce70c5, type: 3}
+    TalkCharPos: 4
+    IsTalk: 1
+  CharName: Sunny
+  Dialogue: Halo perkenalkan saya sunny. Disini saya yang bebicara

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
+  m_Name: Con Character Baru
+  m_EditorClassIdentifier: 
+  Judul: Character Baru
+  sprBackgroundDialogue: {fileID: 21300000, guid: 77920d5733299b7418a2af17da8c0c2a, type: 3}
+  ListDialogue:
+  - {fileID: 11400000, guid: 3e5b1dbe83d72c942b46a22f5689acd2, type: 2}
+  - {fileID: 11400000, guid: 26fd5c82ac912e2448e738151e86f401, type: 2}
+  - {fileID: 11400000, guid: 9b45a765d6da1464c93c76eacc64dab8, type: 2}
+  - {fileID: 11400000, guid: 6e3d8bc4f0025b346938b8e090c09399, type: 2}
+  eventEndDialogue: 2
+  nextConversation: {fileID: 0}
+  openChoice: {fileID: 11400000, guid: a68ce176fc928da4f99bf8b06ac2759d, type: 2}
+  spiteCinematic: {fileID: 0}

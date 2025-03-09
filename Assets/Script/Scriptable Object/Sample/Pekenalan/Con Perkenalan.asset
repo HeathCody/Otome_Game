@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
+  m_Name: Con Perkenalan
+  m_EditorClassIdentifier: 
+  Judul: Perkenalan
+  sprBackgroundDialogue: {fileID: 21300000, guid: a305e8a71cecb164b8d9fc4d2efd9525, type: 3}
+  ListDialogue:
+  - {fileID: 11400000, guid: 5afae735368be974191d871d8a159750, type: 2}
+  - {fileID: 11400000, guid: c9f89e342c6b8384c9e4222b95e0ac0e, type: 2}
+  - {fileID: 11400000, guid: 86a524e27ba5f10428b44a75a62e0638, type: 2}
+  eventEndDialogue: 2
+  nextConversation: {fileID: 11400000, guid: 6988678e7d4ac444fa1893ad431f67b2, type: 2}
+  openChoice: {fileID: 11400000, guid: 9316c05229cc9474aafd3c974793d521, type: 2}
+  spiteCinematic: {fileID: 0}
