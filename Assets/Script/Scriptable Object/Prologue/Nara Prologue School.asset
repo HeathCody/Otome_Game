@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8682b05a0e5c0d47b3236bfc5b018e7, type: 3}
+  m_Name: Nara Prologue School
+  m_EditorClassIdentifier: 
+  tittle: Prologue School
+  listNarationData:
+  - isHaveImage: 0
+    sprBackground: {fileID: 0}
+    Naration: Beberapa minggu kemudian...
+  eventEndCinematic: 1
+  conversation: {fileID: 11400000, guid: 897f72c677e33824fbe68a71d271804f, type: 2}
+  choice: {fileID: 0}
+  cinematic: {fileID: 0}
+  naration: {fileID: 0}
+  minigameName: 
