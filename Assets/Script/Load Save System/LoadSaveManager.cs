@@ -14,6 +14,7 @@ public class LoadSaveManager : MonoBehaviour
     public static List<ILoadSaveObjects> listLoadSaveObjects;
     [FoldoutGroup("Load Save Manager")][SerializeField] public bool dataIsReady = false;
     [FoldoutGroup("Load Save Manager")] public bool isFromLoadManager = false;
+    [FoldoutGroup("Load Save Manager")] public bool onLoadSave;
     private void Awake()
     {
         if (instance != null)
@@ -44,15 +45,22 @@ public class LoadSaveManager : MonoBehaviour
             Debug.Log("Save directory not found: " + directoryFile);
             return;
         }
-        string[] saveFiles = Directory.GetFiles(directoryFile, "*.json");
+        string[] saveFiles = Directory.GetFiles(directoryFile);
         foreach (string filePath in saveFiles)
         {
             try
             {
-                string json = File.ReadAllText(filePath);
-                json = EncripDecrip(json);
-                PlayerData data = JsonUtility.FromJson<PlayerData>(json);
-                listPlayerData.Add(data);
+                string json = "";
+                using (FileStream stream = new FileStream(filePath, FileMode.Open))
+                {
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        json = reader.ReadToEnd();
+                        //json = EncripDecrip(json);
+                        PlayerData data = JsonUtility.FromJson<PlayerData>(json);
+                        listPlayerData.Add(data);
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -76,7 +84,7 @@ public class LoadSaveManager : MonoBehaviour
                         dataToLoad = reader.ReadToEnd();
                     }
                 }
-                dataToLoad = EncripDecrip(dataToLoad);
+                //dataToLoad = EncripDecrip(dataToLoad);
                 galleryData = JsonUtility.FromJson<GameDataGallery>(dataToLoad);
             }
             catch (Exception ex)
@@ -107,7 +115,7 @@ public class LoadSaveManager : MonoBehaviour
                         dataToLoad = reader.ReadToEnd();
                     }
                 }
-                dataToLoad = EncripDecrip(dataToLoad);
+                //dataToLoad = EncripDecrip(dataToLoad);
                 playerData = JsonUtility.FromJson<PlayerData>(dataToLoad);
             }
             catch (Exception ex)
@@ -117,23 +125,22 @@ public class LoadSaveManager : MonoBehaviour
             LoadObjectData();
         }
     }
-    public void SaveGameData(int index)
+    public void SaveGameData(int indexdata, bool isNewSaveData)
     {
+        onLoadSave = true;
         for (int i = 0; i < listLoadSaveObjects.Count; i++)
             listLoadSaveObjects[i].SaveGameData(ref playerData, ref galleryData);
 
-        if (index > listPlayerData.Count)
-        {
-            int indexFile = index + 1;
-            playerData.fileName = fileNamePlayerDataHeader + "-" + indexFile;
-        }
+        int indexFile = indexdata + 1;
+        playerData.fileName = fileNamePlayerDataHeader + "-" + indexFile;
+        playerData.indexData = indexdata;
 
         string fullpathPlayerData = Path.Combine(Application.persistentDataPath, DirectoryPlayerData, playerData.fileName);
         try
         {
             Directory.CreateDirectory(Path.GetDirectoryName(fullpathPlayerData));
             string playerDataToStore = JsonUtility.ToJson(playerData, true);
-            playerDataToStore = EncripDecrip(playerDataToStore);
+            //playerDataToStore = EncripDecrip(playerDataToStore);
             using (FileStream stream = new FileStream(fullpathPlayerData, FileMode.Create))
             {
                 using (StreamWriter writer = new StreamWriter(stream))
@@ -141,8 +148,9 @@ public class LoadSaveManager : MonoBehaviour
                     writer.Write(playerDataToStore);
                 }
             }
-            if (index > listPlayerData.Count)
+            if (isNewSaveData)
                 listPlayerData.Add(playerData);
+            listPlayerData.Sort((a, b) => string.Compare(a.fileName, b.fileName));
         }
         catch (Exception ex)
         {
@@ -152,8 +160,8 @@ public class LoadSaveManager : MonoBehaviour
         try
         {
             Directory.CreateDirectory(Path.GetDirectoryName(fullpathGalleryData));
-            string galleryDataToStore = JsonUtility.ToJson(playerData, true);
-            galleryDataToStore = EncripDecrip(galleryDataToStore);
+            string galleryDataToStore = JsonUtility.ToJson(galleryData, true);
+            //galleryDataToStore = EncripDecrip(galleryDataToStore);
             using (FileStream stream = new FileStream(fullpathGalleryData, FileMode.Create))
             {
                 using (StreamWriter writer = new StreamWriter(stream))
@@ -166,6 +174,7 @@ public class LoadSaveManager : MonoBehaviour
         {
             Debug.LogError("Error on Save Player Data " + fullpathGalleryData + "\n" + ex);
         }
+        onLoadSave = false;
     }
     public static void Register(ILoadSaveObjects obj)
     {

@@ -2,6 +2,7 @@
 public class PlayerData
 {
     public string fileName;
+    public int indexData;
     public string currentEventTittle;
     public string currentEventSection;
     public EventGame currentEventGame;

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameplayManager : MonoBehaviour, ILoadSaveObjects
@@ -16,6 +17,7 @@ public class GameplayManager : MonoBehaviour, ILoadSaveObjects
     [FoldoutGroup("Gameplay Manager")][SerializeField] UiCinematic uiCinematic;
     [FoldoutGroup("Gameplay Manager")][SerializeField] UiNaration uiNaration;
     [FoldoutGroup("Gameplay Manager")][SerializeField] UiPanelGallery uiGallery;
+    [FoldoutGroup("Gameplay Manager")][SerializeField] UiPanelDataGame uiLoadSave;
     [FoldoutGroup("Gameplay Manager")][SerializeField] PlayerData playerData;
     [FoldoutGroup("Gameplay Manager")][SerializeField] private int ReputationNetral;
     [FoldoutGroup("Gameplay Manager")][SerializeField] private int ReputationChar1;
@@ -181,4 +183,19 @@ public class GameplayManager : MonoBehaviour, ILoadSaveObjects
             }
         }
     }
+    #region Ui Menu
+    public void OpenDialogueLog()
+    {
+        Debug.Log("Open Dialogue Log");
+    }
+    public void OpenSetting()
+    {
+        Debug.Log("Open Setting");
+    }
+    public void BackToMainMenu()
+    {
+        Debug.Log("Back To Main Menu");
+        SceneManager.LoadScene(0);
+    }
+    #endregion
 }

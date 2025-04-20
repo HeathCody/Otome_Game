@@ -60,7 +60,7 @@ public class MainMenuManager : MonoBehaviour
     }
 
     #region Gameplay
-    [FoldoutGroup("Gameplay")][SerializeField] private UiPanelLoadDataGame uiLoadDataGame;
+    [FoldoutGroup("Gameplay")][SerializeField] private UiPanelDataGame uiLoadDataGame;
     public void ButtonNewGame()
     {
         LoadSaveManager.instance.NewGameData();
