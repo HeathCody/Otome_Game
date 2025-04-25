@@ -47,6 +47,15 @@ public class UiDialogue : MonoBehaviour
                     listImgCharTalk[i].gameObject.SetActive(true);
                     listImgCharBlack[i].gameObject.SetActive(true);
                     if (data.ListCharTalk[j].IsTalk) listImgCharTalk[i].transform.SetAsLastSibling();
+                    if (data.ListCharTalk[j].isAnimated)
+                    {
+                        switch (data.ListCharTalk[j].anim)
+                        {
+                            case "Jump":
+                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("Jump");
+                                break;
+                        }
+                    }
                 }
             }
         }

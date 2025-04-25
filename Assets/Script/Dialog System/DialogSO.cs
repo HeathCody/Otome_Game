@@ -30,4 +30,6 @@ public class CharTalk
 
     [Tooltip("Untuk menentukan apakah gambar ini sedang berbicara atau tidak")]
     public bool IsTalk;
+    public bool isAnimated;
+    public string anim;
 }
