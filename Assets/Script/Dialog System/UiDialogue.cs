@@ -12,6 +12,8 @@ public class UiDialogue : MonoBehaviour
     [SerializeField] private List<Image> listImgCharBlack;
     [SerializeField] private Color colorOnTalk;
     [SerializeField] private Color colorNotTalk;
+    [SerializeField] private GameObject panelCharBox;
+    [SerializeField] private Image imgCharBox;
     [SerializeField] private TextMeshProUGUI txtCharTalkName;
     [SerializeField] private TextMeshProUGUI txtDialogue;
     public void ResetDialogue(bool isCloseAll = true)
@@ -59,6 +61,8 @@ public class UiDialogue : MonoBehaviour
                 }
             }
         }
+        panelCharBox.SetActive(data.SprBoxChar != null);
+        imgCharBox.sprite = data.SprBoxChar;
         txtCharTalkName.text = data.CharName;
         txtDialogue.text = data.Dialogue;
         panelContent.SetActive(true);

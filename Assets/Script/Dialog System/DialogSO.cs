@@ -15,6 +15,7 @@ public class DialogSO : ScriptableObject
     [Tooltip("Untuk menentukan 2D character apa saja yang muncul")]
     public List<CharTalk> ListCharTalk = new List<CharTalk>();
     [Tooltip("Untuk menentukan nama character yang berbicara")]
+    public Sprite SprBoxChar;
     public string CharName;
     [TextArea(2, 5)] public string Dialogue;
 }
