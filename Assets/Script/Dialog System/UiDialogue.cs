@@ -16,7 +16,7 @@ public class UiDialogue : MonoBehaviour
     [SerializeField] private GameObject panelCharBox;
     [SerializeField] private Image imgCharBox;
     [SerializeField] private TextMeshProUGUI txtCharTalkName;
-    [SerializeField] private TextMeshProUGUI txtDialogue;
+    [SerializeField] public TextMeshProUGUI txtDialogue;
 
     public float textSpeed = 0.05f;
     public DialogueManager dialogueManager;
@@ -61,7 +61,8 @@ public class UiDialogue : MonoBehaviour
                                 listImgCharTalk[i].GetComponent<Animator>().SetTrigger("Jump");
                                 break;
                             case "SlideDown":
-                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("SlideDown");
+                                StartCoroutine(PlayDelayedAnimation(listImgCharTalk[i].GetComponent<Animator>(), "SlideDown"));
+                                //listImgCharTalk[i].GetComponent<Animator>().SetTrigger("SlideDown");
                                 break;
                             case "CharShake":
                                 listImgCharTalk[i].GetComponent<Animator>().SetTrigger("CharShake");
@@ -90,6 +91,12 @@ public class UiDialogue : MonoBehaviour
         StartCoroutine(TypeLine(data));
     }
 
+    IEnumerator PlayDelayedAnimation(Animator animator, string triggerName)
+    {
+        yield return new WaitForSeconds(0.05f);
+        animator.SetTrigger(triggerName);
+    }
+
     IEnumerator TypeLine(DialogSO data)
     {
         foreach (char c in data.Dialogue.ToCharArray())
@@ -100,10 +107,8 @@ public class UiDialogue : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void OnDialogueClick()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
             if (txtDialogue.text == dialogueManager.currentDialogue.Dialogue)
             {
                 dialogueManager.NextDialogue();
@@ -113,6 +118,5 @@ public class UiDialogue : MonoBehaviour
                 StopAllCoroutines();
                 txtDialogue.text = dialogueManager.currentDialogue.Dialogue;
             }
-        }
     }
 }

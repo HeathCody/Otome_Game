@@ -28,10 +28,12 @@ public class DialogueManager : MonoBehaviour
     }
     public void NextDialogue()
     {
+        uiDialogue.txtDialogue.text = string.Empty;
         if (queueDialogue.Count > 0)
         {
             currentDialogue = queueDialogue.Dequeue() as DialogSO;
             uiDialogue.SetDialogue(currentDialogue);
+
         }
         else
         {

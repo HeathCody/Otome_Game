@@ -14,14 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Judul: Prologue School
   Section: 2
-  BgDialogue: {fileID: 0}
+  BgDialogue: {fileID: 21300000, guid: 97fd21d002fb66c46a6eda414fdcee58, type: 3}
   ListCharTalk:
   - SprTalkChar: {fileID: 448583185, guid: 9b96308d47919b74fae8cb1396cf5138, type: 3}
     TalkCharPos: 1
     IsTalk: 0
+    isAnimated: 0
+    anim: 
   - SprTalkChar: {fileID: -235366976, guid: 677ec2f3f5c76ee458486e11fecb336b, type: 3}
     TalkCharPos: 6
     IsTalk: 1
+    isAnimated: 1
+    anim: SlideDown
+  SprBoxChar: {fileID: 0}
   CharName: Anak B
   Dialogue: 'Oke! Nggak sabarnya nunggu pulang
 
