@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -16,6 +17,9 @@ public class UiDialogue : MonoBehaviour
     [SerializeField] private Image imgCharBox;
     [SerializeField] private TextMeshProUGUI txtCharTalkName;
     [SerializeField] private TextMeshProUGUI txtDialogue;
+
+    public float textSpeed = 0.05f;
+    public DialogueManager dialogueManager;
     public void ResetDialogue(bool isCloseAll = true)
     {
         imgBg.sprite = isCloseAll ? sprBgDefault : imgBg.sprite;
@@ -56,16 +60,59 @@ public class UiDialogue : MonoBehaviour
                             case "Jump":
                                 listImgCharTalk[i].GetComponent<Animator>().SetTrigger("Jump");
                                 break;
+                            case "SlideDown":
+                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("SlideDown");
+                                break;
+                            case "CharShake":
+                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("CharShake");
+                                break;
+                            case "ZoomInFast":
+                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("ZoomInFast");
+                                break;
+                            case "ZoomOutFast":
+                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("ZoomOutFast");
+                                break;
+                            case "ScreenShake":
+                                panelContent.GetComponent<Animator>().SetTrigger("ScreenShake");
+                                break;
                         }
                     }
                 }
             }
         }
-        panelCharBox.SetActive(data.SprBoxChar != null);
+        txtCharTalkName.text = data.CharName;
         imgCharBox.sprite = data.SprBoxChar;
         txtCharTalkName.text = data.CharName;
-        txtDialogue.text = data.Dialogue;
+        //txtDialogue.text = data.Dialogue;
         panelContent.SetActive(true);
         panelDialogue.SetActive(true);
+
+        StartCoroutine(TypeLine(data));
+    }
+
+    IEnumerator TypeLine(DialogSO data)
+    {
+        foreach (char c in data.Dialogue.ToCharArray())
+        {
+            txtDialogue.text += c;
+            yield return new WaitForSeconds(textSpeed);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (txtDialogue.text == dialogueManager.currentDialogue.Dialogue)
+            {
+                dialogueManager.NextDialogue();
+            }
+            else
+            {
+                StopAllCoroutines();
+                txtDialogue.text = dialogueManager.currentDialogue.Dialogue;
+            }
+        }
     }
 }

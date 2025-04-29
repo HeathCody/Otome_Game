@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private UiDialogue uiDialogue;
     [SerializeField] private ConversationSO currentConversation;
     Queue queueDialogue = new Queue();
-    DialogSO currentDialogue;
+    public DialogSO currentDialogue;
 
     void Awake()
     {
