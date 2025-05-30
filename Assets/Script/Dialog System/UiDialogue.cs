@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-public class UiDialogue : MonoBehaviour
+public class UiDialogue : MonoBehaviour, IUIBase
 {
     [SerializeField] private GameObject panelContent;
     [SerializeField] private GameObject panelDialogue;
@@ -18,6 +18,15 @@ public class UiDialogue : MonoBehaviour
     [SerializeField] private TextMeshProUGUI txtCharTalkName;
     [SerializeField] public TextMeshProUGUI txtDialogue;
 
+    //efek
+    [SerializeField] public Efek efek;
+    [SerializeField] private CanvasGroup canvasGroup;
+
+    public CanvasGroup GetCanvasGroup()
+    {
+        return canvasGroup;
+    }
+
     public float textSpeed = 0.05f;
     public DialogueManager dialogueManager;
     public void ResetDialogue(bool isCloseAll = true)
@@ -31,6 +40,8 @@ public class UiDialogue : MonoBehaviour
         txtCharTalkName.text = "";
         txtDialogue.text = "";
         panelContent.SetActive(isCloseAll ? false : true);
+        efek.InitFadeOut(this);
+        efek.FadeOut();
         panelDialogue.SetActive(false);
     }
     public void SetDialogue(DialogSO data)
@@ -84,7 +95,8 @@ public class UiDialogue : MonoBehaviour
         txtCharTalkName.text = data.CharName;
         imgCharBox.sprite = data.SprBoxChar;
         txtCharTalkName.text = data.CharName;
-        //txtDialogue.text = data.Dialogue;
+        efek.InitFadeIn(this);
+        efek.FadeIn();
         panelContent.SetActive(true);
         panelDialogue.SetActive(true);
 

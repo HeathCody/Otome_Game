@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UiNaration : MonoBehaviour
+public class UiNaration : MonoBehaviour, IUIBase
 {
     [SerializeField] private GameplayManager gm;
     [SerializeField] private GameObject panelNaration;
@@ -12,6 +12,15 @@ public class UiNaration : MonoBehaviour
     [SerializeField] private Button btnNaration;
     private NarationSO currentNaration;
     int indexNaration;
+
+    //efek
+    [SerializeField] private Efek efek;
+    [SerializeField] private CanvasGroup canvasGroup;
+    public CanvasGroup GetCanvasGroup()
+    {
+        return canvasGroup;
+    }
+
     void Awake()
     {
         panelNaration.SetActive(false);
@@ -31,6 +40,8 @@ public class UiNaration : MonoBehaviour
             imgBackground.color = Color.black;
         }
         txtNaration.text = currentNaration.listNarationData[indexNaration].Naration;
+        efek.InitFadeIn(this);
+        efek.FadeIn();
         panelNaration.SetActive(true);
         btnNaration.Select();
     }
@@ -52,6 +63,8 @@ public class UiNaration : MonoBehaviour
             txtNaration.text = currentNaration.listNarationData[indexNaration].Naration;
             return;
         }
+        efek.InitFadeOut(this);
+        efek.FadeOut();
         panelNaration.SetActive(false);
         EndNaration();
     }

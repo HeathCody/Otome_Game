@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     Queue queueDialogue = new Queue();
     public DialogSO currentDialogue;
 
+    [SerializeField] private Efek efek;
+
     void Awake()
     {
         uiDialogue.ResetDialogue();
@@ -45,15 +47,19 @@ public class DialogueManager : MonoBehaviour
         switch (currentConversation.eventEndDialogue)
         {
             case EventGame.OpenConversation:
+                efek.FadeIn();
                 gm.OpenConversation(currentConversation.conversation);
+                efek.FadeOut();
                 break;
             case EventGame.OpenChoice:
                 uiDialogue.ResetDialogue(false);
                 gm.OpenChoice(currentConversation.choice);
                 break;
             case EventGame.OpenCinematic:
+                efek.FadeIn();
                 uiDialogue.ResetDialogue();
                 gm.OpenCinematic(currentConversation.cinematic);
+                efek.FadeOut();
                 break;
             case EventGame.OpenMap:
                 uiDialogue.ResetDialogue();
@@ -64,8 +70,10 @@ public class DialogueManager : MonoBehaviour
                 gm.OpenMinigame(currentConversation.minigameName);
                 break;
             case EventGame.OpenNaration:
+                efek.FadeIn();
                 uiDialogue.ResetDialogue();
                 gm.OpenNaration(currentConversation.naration);
+                efek.FadeOut();
                 break;
         }
     }

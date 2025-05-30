@@ -1,19 +1,31 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UiCinematic : MonoBehaviour
+public class UiCinematic : MonoBehaviour, IUIBase
 {
     [SerializeField] private GameplayManager gm;
     [SerializeField] private GameObject panelCinematic;
     [SerializeField] private Image imgCinematic;
     [SerializeField] private Button btnCinematic;
+
     private CinematicSO currentCinematic;
+
+    //efek
+    [SerializeField] private Efek efek;
+    [SerializeField] private CanvasGroup canvasGroup;
+    public CanvasGroup GetCanvasGroup()
+    {
+        return canvasGroup;
+    }
+
     void Awake()
     {
         panelCinematic.SetActive(false);
     }
     public void OpenCinematic(CinematicSO cinemaSo)
     {
+        efek.InitFadeIn(this);
+        efek.FadeIn();
         currentCinematic = cinemaSo;
         imgCinematic.sprite = currentCinematic.sprCinematic;
         panelCinematic.SetActive(true);
@@ -21,6 +33,8 @@ public class UiCinematic : MonoBehaviour
     }
     public void CloseCinematic()
     {
+        efek.InitFadeOut(this);
+        efek.FadeOut();
         panelCinematic.SetActive(false);
         EndCinematic();
         if (currentCinematic != null && currentCinematic.isCinematicUnlock)

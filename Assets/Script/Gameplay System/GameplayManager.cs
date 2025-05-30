@@ -77,6 +77,7 @@ public class GameplayManager : MonoBehaviour, ILoadSaveObjects
                     return;
                 }
                 ConversationSO conversation = listGameEvent.listGameConversation[index].conversation;
+                
                 OpenConversation(conversation);
                 break;
             case EventGame.OpenCinematic:
