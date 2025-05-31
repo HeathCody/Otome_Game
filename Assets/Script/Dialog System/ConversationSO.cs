@@ -16,4 +16,6 @@ public class ConversationSO : ScriptableObject
     [ShowIf("eventEndDialogue", EventGame.OpenCinematic)] public CinematicSO cinematic;
     [ShowIf("eventEndDialogue", EventGame.OpenNaration)] public NarationSO naration;
     [ShowIf("eventEndDialogue", EventGame.OpenMinigame)] public string minigameName;
+    public EffectEvent effectStartEvent;
+    public EffectEvent effectEndEvent;
 }

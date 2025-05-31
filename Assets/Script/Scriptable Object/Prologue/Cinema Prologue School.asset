@@ -21,3 +21,5 @@ MonoBehaviour:
   cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 
+  effectStartEvent: 1
+  effectEndEvent: 2

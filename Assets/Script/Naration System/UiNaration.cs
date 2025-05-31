@@ -1,8 +1,9 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UiNaration : MonoBehaviour, IUIBase
+public class UiNaration : MonoBehaviour
 {
     [SerializeField] private GameplayManager gm;
     [SerializeField] private GameObject panelNaration;
@@ -14,12 +15,8 @@ public class UiNaration : MonoBehaviour, IUIBase
     int indexNaration;
 
     //efek
-    [SerializeField] private Efek efek;
     [SerializeField] private CanvasGroup canvasGroup;
-    public CanvasGroup GetCanvasGroup()
-    {
-        return canvasGroup;
-    }
+    [SerializeField] private float durationFade = 1f;
 
     void Awake()
     {
@@ -40,10 +37,45 @@ public class UiNaration : MonoBehaviour, IUIBase
             imgBackground.color = Color.black;
         }
         txtNaration.text = currentNaration.listNarationData[indexNaration].Naration;
-        efek.InitFadeIn(this);
-        efek.FadeIn();
         panelNaration.SetActive(true);
         btnNaration.Select();
+        switch (currentNaration.effectstartEvent)
+        {
+            case EffectEvent.None:
+                canvasGroup.alpha = 1;
+                canvasGroup.interactable = true;
+                break;
+            case EffectEvent.FadeIn:
+                FadeIn();
+                break;
+        }
+    }
+    private void FadeIn()
+    {
+        canvasGroup.alpha = 0;
+        StartCoroutine(ieFade(true));
+    }
+    private void FadeOut()
+    {
+        canvasGroup.alpha = 1;
+        StartCoroutine(ieFade(false));
+    }
+    IEnumerator ieFade(bool isFadeIn)
+    {
+        canvasGroup.interactable = false;
+        float time = 0;
+        while (time < durationFade)
+        {
+            canvasGroup.alpha = Mathf.Lerp(canvasGroup.alpha, isFadeIn ? 1 : 0, time / durationFade);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        if (isFadeIn)
+            canvasGroup.interactable = true;
+        else
+        {
+            panelNaration.SetActive(false);
+        }
     }
     public void ButtonNaration()
     {
@@ -63,10 +95,17 @@ public class UiNaration : MonoBehaviour, IUIBase
             txtNaration.text = currentNaration.listNarationData[indexNaration].Naration;
             return;
         }
-        efek.InitFadeOut(this);
-        efek.FadeOut();
-        panelNaration.SetActive(false);
-        EndNaration();
+        switch (currentNaration.effectEndEvent)
+        {
+            case EffectEvent.None:
+                panelNaration.SetActive(false);
+                EndNaration();
+                break;
+            case EffectEvent.FadeOut:
+                EndNaration();
+                FadeOut();
+                break;
+        }
     }
 
     void EndNaration()

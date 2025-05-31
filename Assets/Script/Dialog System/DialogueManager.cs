@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameplayManager gm;
     [SerializeField] private UiDialogue uiDialogue;
     [SerializeField] private ConversationSO currentConversation;
+    [SerializeField] private float durationEffect = 1f;
     Queue queueDialogue = new Queue();
     public DialogSO currentDialogue;
 
@@ -26,7 +27,7 @@ public class DialogueManager : MonoBehaviour
             dialogue.BgDialogue = currentConversation.sprBackgroundDialogue;
             queueDialogue.Enqueue(dialogue);
         }
-        NextDialogue();
+        NextDialogue(currentConversation.effectStartEvent);
     }
     public void NextDialogue()
     {
@@ -34,8 +35,20 @@ public class DialogueManager : MonoBehaviour
         if (queueDialogue.Count > 0)
         {
             currentDialogue = queueDialogue.Dequeue() as DialogSO;
-            uiDialogue.SetDialogue(currentDialogue);
-
+            uiDialogue.SetDialogue(currentDialogue, EffectEvent.None);
+        }
+        else
+        {
+            EndDialogue();
+        }
+    }
+    public void NextDialogue(EffectEvent effect)
+    {
+        uiDialogue.txtDialogue.text = string.Empty;
+        if (queueDialogue.Count > 0)
+        {
+            currentDialogue = queueDialogue.Dequeue() as DialogSO;
+            uiDialogue.SetDialogue(currentDialogue, effect);
         }
         else
         {
@@ -44,36 +57,35 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
     {
+        switch (currentConversation.effectEndEvent)
+        {
+            case EffectEvent.FadeOut:
+                uiDialogue.EffectFadeOut();
+                break;
+            case EffectEvent.None:
+                if (currentConversation.eventEndDialogue != EventGame.OpenConversation)
+                    uiDialogue.ResetDialogue(currentConversation.eventEndDialogue == EventGame.OpenChoice ? false : true);
+                break;
+        }
         switch (currentConversation.eventEndDialogue)
         {
             case EventGame.OpenConversation:
-                efek.FadeIn();
                 gm.OpenConversation(currentConversation.conversation);
-                efek.FadeOut();
                 break;
             case EventGame.OpenChoice:
-                uiDialogue.ResetDialogue(false);
                 gm.OpenChoice(currentConversation.choice);
                 break;
             case EventGame.OpenCinematic:
-                efek.FadeIn();
-                uiDialogue.ResetDialogue();
                 gm.OpenCinematic(currentConversation.cinematic);
-                efek.FadeOut();
                 break;
             case EventGame.OpenMap:
-                uiDialogue.ResetDialogue();
                 gm.OpenMap();
                 break;
             case EventGame.OpenMinigame:
-                uiDialogue.ResetDialogue();
                 gm.OpenMinigame(currentConversation.minigameName);
                 break;
             case EventGame.OpenNaration:
-                efek.FadeIn();
-                uiDialogue.ResetDialogue();
                 gm.OpenNaration(currentConversation.naration);
-                efek.FadeOut();
                 break;
         }
     }

@@ -14,4 +14,6 @@ public class CinematicSO : ScriptableObject
     [ShowIf("eventEndCinematic", EventGame.OpenCinematic)] public CinematicSO cinematic;
     [ShowIf("eventEndCinematic", EventGame.OpenNaration)] public NarationSO naration;
     [ShowIf("eventEndCinematic", EventGame.OpenMinigame)] public string minigameName;
+    public EffectEvent effectStartEvent;
+    public EffectEvent effectEndEvent;
 }

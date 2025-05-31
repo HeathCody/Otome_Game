@@ -33,3 +33,5 @@ MonoBehaviour:
   cinematic: {fileID: 0}
   naration: {fileID: 11400000, guid: 282ee61bef86c1d41adc8f8af1a9c528, type: 2}
   minigameName: 
+  effectStartEvent: 1
+  effectEndEvent: 0

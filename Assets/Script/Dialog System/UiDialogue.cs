@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-public class UiDialogue : MonoBehaviour, IUIBase
+public class UiDialogue : MonoBehaviour
 {
     [SerializeField] private GameObject panelContent;
     [SerializeField] private GameObject panelDialogue;
@@ -17,15 +17,11 @@ public class UiDialogue : MonoBehaviour, IUIBase
     [SerializeField] private Image imgCharBox;
     [SerializeField] private TextMeshProUGUI txtCharTalkName;
     [SerializeField] public TextMeshProUGUI txtDialogue;
+    [SerializeField] private DialogSO currentDialogue;
 
     //efek
-    [SerializeField] public Efek efek;
-    [SerializeField] private CanvasGroup canvasGroup;
-
-    public CanvasGroup GetCanvasGroup()
-    {
-        return canvasGroup;
-    }
+    public CanvasGroup canvasGroup;
+    [SerializeField] private float durationFade = 1f;
 
     public float textSpeed = 0.05f;
     public DialogueManager dialogueManager;
@@ -40,33 +36,74 @@ public class UiDialogue : MonoBehaviour, IUIBase
         txtCharTalkName.text = "";
         txtDialogue.text = "";
         panelContent.SetActive(isCloseAll ? false : true);
-        efek.InitFadeOut(this);
-        efek.FadeOut();
         panelDialogue.SetActive(false);
     }
-    public void SetDialogue(DialogSO data)
+    public void SetDialogue(DialogSO data, EffectEvent effect)
     {
-        if (imgBg.sprite != data.BgDialogue) imgBg.sprite = data.BgDialogue;
+        currentDialogue = data;
+        if (imgBg.sprite != currentDialogue.BgDialogue) imgBg.sprite = currentDialogue.BgDialogue;
+        panelContent.SetActive(true);
         for (int i = 0; i < listImgCharTalk.Count; i++)
         {
             listImgCharTalk[i].gameObject.SetActive(false);
             listImgCharBlack[i].gameObject.SetActive(false);
         }
+        txtCharTalkName.text = currentDialogue.CharName;
+        imgCharBox.sprite = currentDialogue.SprBoxChar;
+        panelDialogue.SetActive(true);
+        switch (effect)
+        {
+            case EffectEvent.None:
+                canvasGroup.alpha = 1;
+                canvasGroup.interactable = true;
+                StartTalking();
+                break;
+            case EffectEvent.FadeIn:
+                EffectFadeIn();
+                break;
+        }
+    }
+    private void EffectFadeIn()
+    {
+        canvasGroup.alpha = 0;
+        StartCoroutine(IeFade(true));
+    }
+    public void EffectFadeOut()
+    {
+        canvasGroup.alpha = 1;
+        StartCoroutine(IeFade(false));
+    }
+    IEnumerator IeFade(bool isFadeIn)
+    {
+        canvasGroup.interactable = false;
+        float time = 0;
+        while (time < durationFade)
+        {
+            canvasGroup.alpha = Mathf.Lerp(canvasGroup.alpha, isFadeIn ? 1 : 0, time / durationFade);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        if (isFadeIn)
+            StartTalking();
+    }
+    private void StartTalking()
+    {
+        canvasGroup.interactable = true;
         for (int i = 0; i < listImgCharTalk.Count; i++)
         {
-            for (int j = 0; j < data.ListCharTalk.Count; j++)
+            for (int j = 0; j < currentDialogue.ListCharTalk.Count; j++)
             {
-                if (data.ListCharTalk[j].TalkCharPos - 1 == i)
+                if (currentDialogue.ListCharTalk[j].TalkCharPos - 1 == i)
                 {
-                    listImgCharTalk[i].sprite = data.ListCharTalk[j].SprTalkChar;
-                    listImgCharBlack[i].sprite = data.ListCharTalk[j].SprTalkChar;
-                    listImgCharBlack[i].color = data.ListCharTalk[j].IsTalk ? colorOnTalk : colorNotTalk;
+                    listImgCharTalk[i].sprite = currentDialogue.ListCharTalk[j].SprTalkChar;
+                    listImgCharBlack[i].sprite = currentDialogue.ListCharTalk[j].SprTalkChar;
+                    listImgCharBlack[i].color = currentDialogue.ListCharTalk[j].IsTalk ? colorOnTalk : colorNotTalk;
                     listImgCharTalk[i].gameObject.SetActive(true);
                     listImgCharBlack[i].gameObject.SetActive(true);
-                    if (data.ListCharTalk[j].IsTalk) listImgCharTalk[i].transform.SetAsLastSibling();
-                    if (data.ListCharTalk[j].isAnimated)
+                    if (currentDialogue.ListCharTalk[j].IsTalk) listImgCharTalk[i].transform.SetAsLastSibling();
+                    if (currentDialogue.ListCharTalk[j].isAnimated)
                     {
-                        switch (data.ListCharTalk[j].anim)
+                        switch (currentDialogue.ListCharTalk[j].anim)
                         {
                             case "Jump":
                                 listImgCharTalk[i].GetComponent<Animator>().SetTrigger("Jump");
@@ -92,15 +129,7 @@ public class UiDialogue : MonoBehaviour, IUIBase
                 }
             }
         }
-        txtCharTalkName.text = data.CharName;
-        imgCharBox.sprite = data.SprBoxChar;
-        txtCharTalkName.text = data.CharName;
-        efek.InitFadeIn(this);
-        efek.FadeIn();
-        panelContent.SetActive(true);
-        panelDialogue.SetActive(true);
-
-        StartCoroutine(TypeLine(data));
+        StartCoroutine(TypeLine(currentDialogue));
     }
 
     IEnumerator PlayDelayedAnimation(Animator animator, string triggerName)
@@ -121,14 +150,14 @@ public class UiDialogue : MonoBehaviour, IUIBase
     // Update is called once per frame
     public void OnDialogueClick()
     {
-            if (txtDialogue.text == dialogueManager.currentDialogue.Dialogue)
-            {
-                dialogueManager.NextDialogue();
-            }
-            else
-            {
-                StopAllCoroutines();
-                txtDialogue.text = dialogueManager.currentDialogue.Dialogue;
-            }
+        if (txtDialogue.text == dialogueManager.currentDialogue.Dialogue)
+        {
+            dialogueManager.NextDialogue();
+        }
+        else
+        {
+            StopAllCoroutines();
+            txtDialogue.text = dialogueManager.currentDialogue.Dialogue;
+        }
     }
 }

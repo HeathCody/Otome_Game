@@ -1,7 +1,8 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UiCinematic : MonoBehaviour, IUIBase
+public class UiCinematic : MonoBehaviour
 {
     [SerializeField] private GameplayManager gm;
     [SerializeField] private GameObject panelCinematic;
@@ -11,34 +12,74 @@ public class UiCinematic : MonoBehaviour, IUIBase
     private CinematicSO currentCinematic;
 
     //efek
-    [SerializeField] private Efek efek;
     [SerializeField] private CanvasGroup canvasGroup;
-    public CanvasGroup GetCanvasGroup()
-    {
-        return canvasGroup;
-    }
-
+    [SerializeField] private float durationFade = 1f;
     void Awake()
     {
         panelCinematic.SetActive(false);
     }
     public void OpenCinematic(CinematicSO cinemaSo)
     {
-        efek.InitFadeIn(this);
-        efek.FadeIn();
         currentCinematic = cinemaSo;
         imgCinematic.sprite = currentCinematic.sprCinematic;
         panelCinematic.SetActive(true);
         btnCinematic.Select();
+        switch (currentCinematic.effectStartEvent)
+        {
+            case EffectEvent.None:
+                canvasGroup.interactable = true;
+                canvasGroup.alpha = 1;
+                break;
+            case EffectEvent.FadeIn:
+                canvasGroup.alpha = 0;
+                EffectFadeIn();
+                break;
+        }
+    }
+    private void EffectFadeIn()
+    {
+        canvasGroup.alpha = 0;
+        StartCoroutine(IeFade(true));
+    }
+    public void EffectFadeOut()
+    {
+        canvasGroup.alpha = 1;
+        StartCoroutine(IeFade(false));
+    }
+    IEnumerator IeFade(bool isFadeIn)
+    {
+        canvasGroup.interactable = false;
+        float time = 0;
+        while (time < durationFade)
+        {
+            canvasGroup.alpha = Mathf.Lerp(canvasGroup.alpha, isFadeIn ? 1 : 0, time / durationFade);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        if (isFadeIn)
+            canvasGroup.interactable = true;
+        else
+        {
+            panelCinematic.SetActive(false);
+            if (currentCinematic != null && currentCinematic.isCinematicUnlock)
+                gm.UnlockGallery(currentCinematic.tittle);
+        }
     }
     public void CloseCinematic()
     {
-        efek.InitFadeOut(this);
-        efek.FadeOut();
-        panelCinematic.SetActive(false);
-        EndCinematic();
-        if (currentCinematic != null && currentCinematic.isCinematicUnlock)
-            gm.UnlockGallery(currentCinematic.tittle);
+        switch (currentCinematic.effectEndEvent)
+        {
+            case EffectEvent.None:
+                panelCinematic.SetActive(false);
+                EndCinematic();
+                if (currentCinematic != null && currentCinematic.isCinematicUnlock)
+                    gm.UnlockGallery(currentCinematic.tittle);
+                break;
+            case EffectEvent.FadeOut:
+                EndCinematic();
+                EffectFadeOut();
+                break;
+        }
     }
 
     void EndCinematic()

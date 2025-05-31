@@ -560,8 +560,8 @@ MonoBehaviour:
   colorSemiBlack: {r: 0, g: 0, b: 0, a: 0.5882353}
   txtNaration: {fileID: 1488452004}
   btnNaration: {fileID: 1701274071}
-  efek: {fileID: 699957316}
   canvasGroup: {fileID: 214398723}
+  durationFade: 3
 --- !u!225 &214398723
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1480,7 +1480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &699957312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1576,6 +1576,9 @@ MonoBehaviour:
   UIGroupFadeOut: {fileID: 0}
   fadeIn: 0
   fadeOut: 0
+  eventOnFadeIn:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &754119431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,7 +2065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1222591220
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2102,7 +2105,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: dd83e44bb658fe042a71d30241c46499, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2266,6 +2269,7 @@ MonoBehaviour:
   gm: {fileID: 1298207980}
   uiDialogue: {fileID: 300947404}
   currentConversation: {fileID: 11400000, guid: 99d8ab6c4e538dc498a24f419f9f0949, type: 2}
+  durationEffect: 1
   currentDialogue: {fileID: 11400000, guid: 5afae735368be974191d871d8a159750, type: 2}
   efek: {fileID: 699957316}
 --- !u!114 &1298207983
@@ -2790,8 +2794,8 @@ MonoBehaviour:
   panelCinematic: {fileID: 1222591219}
   imgCinematic: {fileID: 1222591221}
   btnCinematic: {fileID: 1222591223}
-  efek: {fileID: 699957316}
   canvasGroup: {fileID: 1610941304}
+  durationFade: 3
 --- !u!225 &1610941304
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2800,7 +2804,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610941301}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -2831,7 +2835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1634357384
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3562,6 +3566,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4967292324620584251}
     - target: {fileID: 1366089282661165349, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: durationFade
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1366089282661165349, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1298207982}
@@ -3597,6 +3605,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2727311645722019034, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3642632553412517143, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
       propertyPath: m_ChildAlignment
       value: 4
@@ -3604,6 +3616,10 @@ PrefabInstance:
     - target: {fileID: 3642632553412517143, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
       propertyPath: m_Padding.m_Left
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484560013176878693, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5351218040930313580, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
       propertyPath: m_AnchorMax.y

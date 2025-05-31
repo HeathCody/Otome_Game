@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public interface IUIBase
@@ -13,6 +14,7 @@ public class Efek : MonoBehaviour
     [SerializeField] private CanvasGroup UIGroupFadeOut;
     [SerializeField] private bool fadeIn = false;
     [SerializeField] private bool fadeOut = false;
+    [SerializeField] private UnityEvent eventOnFadeIn;
 
     public void FadeIn()
     {
@@ -33,37 +35,64 @@ public class Efek : MonoBehaviour
     public void InitFadeIn(IUIBase ui)
     {
         UIGroupFadeIn = ui.GetCanvasGroup();
+        UIGroupFadeIn.alpha = 0;
     }
-    
+
     public void InitFadeOut(IUIBase ui)
     {
         UIGroupFadeOut = ui.GetCanvasGroup();
+        UIGroupFadeOut.alpha = 1;
     }
 
     private void Update()
     {
-        if (fadeIn)
+        //     if (fadeIn)
+        //     {
+        //         if (UIGroupFadeIn.alpha < 1)
+        //         {
+        //             UIGroupFadeIn.alpha += Time.deltaTime;
+        //             if (UIGroupFadeIn.alpha >= 1)
+        //             {
+        //                 fadeIn = false;
+        //             }
+        //         }
+        //     }
+
+        //     if (fadeOut)
+        //     {
+        //         if (UIGroupFadeOut.alpha >= 0)
+        //         {
+        //             UIGroupFadeOut.alpha -= Time.deltaTime;
+        //             if (UIGroupFadeOut.alpha == 0)
+        //             {
+        //                 fadeOut = false;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+    public IEnumerator IeFadeIn(CanvasGroup cvsgrp, float durationfade)
+    {
+        cvsgrp.interactable = false;
+        float time = 0;
+        while (time < durationfade)
         {
-            if (UIGroupFadeIn.alpha < 1)
-            {
-                UIGroupFadeIn.alpha += Time.deltaTime;
-                if (UIGroupFadeIn.alpha >= 1)
-                {
-                    fadeIn = false;
-                }
-            }
+            cvsgrp.alpha = Mathf.Lerp(0, 1, time / durationfade);
+            time += Time.deltaTime;
+            yield return null;
         }
-        
-        if (fadeOut)
+        cvsgrp.interactable = true;
+    }
+    public IEnumerator IeFadeOut(CanvasGroup cvsgrp, float durationfade)
+    {
+        cvsgrp.interactable = false;
+        float time = 0;
+        while (time < durationfade)
         {
-            if (UIGroupFadeOut.alpha >= 0)
-            {
-                UIGroupFadeOut.alpha -= Time.deltaTime;
-                if (UIGroupFadeOut.alpha == 0)
-                {
-                    fadeOut = false;
-                }
-            }
+            cvsgrp.alpha = Mathf.Lerp(1, 0, time / durationfade);
+            time += Time.deltaTime;
+            yield return null;
         }
+        cvsgrp.interactable = false;
     }
 }
