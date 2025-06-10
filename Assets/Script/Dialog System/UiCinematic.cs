@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ public class UiCinematic : MonoBehaviour
     //efek
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private float durationFade = 1f;
+    [SerializeField] private Image panelImageTransition;
     void Awake()
     {
         panelCinematic.SetActive(false);
@@ -34,6 +36,14 @@ public class UiCinematic : MonoBehaviour
                 canvasGroup.alpha = 0;
                 EffectFadeIn();
                 break;
+            case EffectEvent.FadeFromBlack:
+                canvasGroup.alpha = 0;
+                EffectFadeFromBlack();
+                break;
+            case EffectEvent.FlashIn:
+                canvasGroup.alpha = 0;
+                EffectFlashIn();
+                break;
         }
     }
     private void EffectFadeIn()
@@ -46,9 +56,33 @@ public class UiCinematic : MonoBehaviour
         canvasGroup.alpha = 1;
         StartCoroutine(IeFade(false));
     }
+    //in
+    public void EffectFadeFromBlack()
+    {
+        canvasGroup.alpha = 0;
+        StartFade(Color.black, 0, 1, CloseCinematic);
+    }
+    //out
+    public void EffectFadeToBlack()
+    {
+        canvasGroup.alpha = 1;
+        StartFade(Color.black, 1, 0);
+    }
+    public void EffectFlashIn()
+    {
+        imgCinematic.sprite = null;
+        canvasGroup.alpha = 0;
+        StartFade(Color.white, 0, 1, CloseCinematic);
+    }
+    public void EffectFlashOut()
+    {
+        imgCinematic.sprite = null;
+        canvasGroup.alpha = 1;
+        StartFade(Color.white, 1, 0);
+    }
     IEnumerator IeFade(bool isFadeIn)
     {
-        canvasGroup.interactable = false;
+        //canvasGroup.interactable = false;
         float time = 0;
         while (time < durationFade)
         {
@@ -65,6 +99,48 @@ public class UiCinematic : MonoBehaviour
                 gm.UnlockGallery(currentCinematic.tittle);
         }
     }
+
+    
+
+    private void StartFade(Color fadeColor, float fromAlpha, float toAlpha, Action onComplete = null)
+    {
+        panelCinematic.SetActive(true);
+        canvasGroup.alpha = fromAlpha;
+        panelImageTransition.color = new Color(fadeColor.r, fadeColor.g, fadeColor.b, fromAlpha);
+        StartCoroutine(IeFadeFlash(fadeColor, fromAlpha, toAlpha, onComplete));
+    }
+
+    private IEnumerator IeFadeFlash(Color fadeColor, float fromAlpha, float toAlpha, Action onComplete)
+    {
+        float time = 0;
+        while (time < durationFade)
+        {
+            float t = time / durationFade;
+            float alpha = Mathf.Lerp(fromAlpha, toAlpha, t);
+            canvasGroup.alpha = alpha;
+            panelImageTransition.color = new Color(fadeColor.r, fadeColor.g, fadeColor.b, alpha);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        // Final values to avoid precision errors
+        canvasGroup.alpha = toAlpha;
+        panelImageTransition.color = new Color(fadeColor.r, fadeColor.g, fadeColor.b, toAlpha);
+
+        if (toAlpha == 0)
+        {
+            panelCinematic.SetActive(false);
+            if (currentCinematic != null && currentCinematic.isCinematicUnlock)
+                gm.UnlockGallery(currentCinematic.tittle);
+        }
+        else
+        {
+            canvasGroup.interactable = true;
+        }
+        // Panggil callback jika ada
+        onComplete?.Invoke();
+    }
+
     public void CloseCinematic()
     {
         switch (currentCinematic.effectEndEvent)
@@ -78,6 +154,14 @@ public class UiCinematic : MonoBehaviour
             case EffectEvent.FadeOut:
                 EndCinematic();
                 EffectFadeOut();
+                break;
+            case EffectEvent.FadeToBlack:
+                EndCinematic();
+                EffectFadeToBlack();
+                break;
+            case EffectEvent.FlashOut:
+                EndCinematic();
+                EffectFlashOut();
                 break;
         }
     }

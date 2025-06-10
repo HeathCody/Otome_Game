@@ -33,4 +33,5 @@ MonoBehaviour:
     anim: ZoomOutFast
   SprBoxChar: {fileID: 0}
   CharName: MC
-  Dialogue: (sedih) E-eeh... pulang sekolah aku nggak bisa. Maaf..
+  Dialogue: (sedih) Bye aku pergi dulu
+  SFXMusic: {fileID: 8300000, guid: f9b6862a5e63c6c4384185c48175400b, type: 3}

@@ -18,6 +18,7 @@ public class DialogSO : ScriptableObject
     public Sprite SprBoxChar;
     public string CharName;
     [TextArea(2, 5)] public string Dialogue;
+    public AudioClip SFXMusic;
 }
 [Serializable]
 public class CharTalk

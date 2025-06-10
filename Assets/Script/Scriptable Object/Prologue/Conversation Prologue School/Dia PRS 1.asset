@@ -24,3 +24,4 @@ MonoBehaviour:
   SprBoxChar: {fileID: 0}
   CharName: Anak A
   Dialogue: Pulang sekolah nanti kita main di tempat biasanya, ya!
+  SFXMusic: {fileID: 8300000, guid: 5e57f9977ebf1dd48b6955f67cf8cf85, type: 3}

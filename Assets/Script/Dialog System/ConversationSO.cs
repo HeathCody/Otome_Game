@@ -8,6 +8,7 @@ public class ConversationSO : ScriptableObject
     [Tooltip("Untuk penamaan dialog")]
     public string tittle;
     public Sprite sprBackgroundDialogue;
+    public AudioClip Backsound;
     public List<DialogSO> ListDialogue = new List<DialogSO>();
     [EnumToggleButtons]
     public EventGame eventEndDialogue;

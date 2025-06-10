@@ -124,6 +124,12 @@ public class UiDialogue : MonoBehaviour
                             case "ScreenShake":
                                 panelContent.GetComponent<Animator>().SetTrigger("ScreenShake");
                                 break;
+                            case "CharFadeOut":
+                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("CharFadeOut");
+                                break;
+                            case "CharFadeIn":
+                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("CharFadeIn");
+                                break;
                         }
                     }
                 }

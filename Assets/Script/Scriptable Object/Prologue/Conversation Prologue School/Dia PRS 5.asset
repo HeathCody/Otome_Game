@@ -31,11 +31,7 @@ MonoBehaviour:
     IsTalk: 0
     isAnimated: 0
     anim: 
-  - SprTalkChar: {fileID: -1617303192, guid: d1c03cbb693802e41a603be3fc4d77c8, type: 3}
-    TalkCharPos: 6
-    IsTalk: 0
-    isAnimated: 0
-    anim: 
   SprBoxChar: {fileID: 0}
   CharName: Anak A
   Dialogue: Hush! Kamu nggak boleh bilang gitu. Dia kan temen kita.
+  SFXMusic: {fileID: 8300000, guid: 395d31e61fe72d44689f28cf3588fe9d, type: 3}
