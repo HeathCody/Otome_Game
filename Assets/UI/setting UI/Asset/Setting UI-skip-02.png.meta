@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 25e5934e67aa21c4dbfe3619566d3d7c
+guid: 1049a0a3a73bdfd4dbee3d91896c07ad
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,23 +110,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main Menu UI-BookmarkOn-03_0
+      name: Setting UI-skip-02_0
       rect:
         serializedVersion: 2
-        x: 399
-        y: 1903
-        width: 1829
-        height: 443
+        x: 3946
+        y: 3743
+        width: 1278
+        height: 249
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 585d945d9fa9c6d42bd35c54f0620a1b
-      internalID: -1292838931
+      spriteID: a9c424d59d181cb4096c91e6d3aefc1e
+      internalID: -958034258
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: d01c2520df2e09347aff9fd2d372b6b8
     internalID: 0
     vertices: []
     indices: 
@@ -145,7 +145,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Main Menu UI-BookmarkOn-03_0: -1292838931
+      Setting UI-skip-02_0: -958034258
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

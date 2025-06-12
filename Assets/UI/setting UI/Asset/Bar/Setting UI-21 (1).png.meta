@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 25e5934e67aa21c4dbfe3619566d3d7c
+guid: 06f1ca95b6ff5744e82ab9dbbdcd4394
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main Menu UI-BookmarkOn-03_0
+      name: Setting UI-21 (1)_0
       rect:
         serializedVersion: 2
-        x: 399
-        y: 1903
-        width: 1829
-        height: 443
+        x: 114
+        y: 282
+        width: 2068
+        height: 202
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 585d945d9fa9c6d42bd35c54f0620a1b
-      internalID: -1292838931
+      spriteID: f7a4470e55006224d87ad1d4b535e91b
+      internalID: -1309869220
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 6ae4f531db706e147b4db0a2f9a44f5e
     internalID: 0
     vertices: []
     indices: 
@@ -145,7 +145,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Main Menu UI-BookmarkOn-03_0: -1292838931
+      Setting UI-21 (1)_0: -1309869220
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

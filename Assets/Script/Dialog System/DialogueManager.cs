@@ -10,7 +10,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float durationEffect = 1f;
     Queue queueDialogue = new Queue();
     public DialogSO currentDialogue;
-    public MusicManager musicManager;
     [SerializeField] private Efek efek;
 
     void Awake()
@@ -21,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     {
         uiDialogue.ResetDialogue();
         currentConversation = conversationSO;
-        musicManager.PlayBacksound();
+        MusicManager.Instance.PlayBacksound();
         queueDialogue.Clear();
         foreach (DialogSO dialogue in currentConversation.ListDialogue)
         {
@@ -37,7 +36,7 @@ public class DialogueManager : MonoBehaviour
         {
             currentDialogue = queueDialogue.Dequeue() as DialogSO;
             uiDialogue.SetDialogue(currentDialogue, EffectEvent.None);
-            musicManager.PlaySFX();
+            MusicManager.Instance.PlaySFX();
         }
         else
         {
@@ -51,7 +50,7 @@ public class DialogueManager : MonoBehaviour
         {
             currentDialogue = queueDialogue.Dequeue() as DialogSO;
             uiDialogue.SetDialogue(currentDialogue, effect);
-            musicManager.PlaySFX();
+            MusicManager.Instance.PlaySFX();
         }
         else
         {
