@@ -13,10 +13,25 @@ MonoBehaviour:
   m_Name: MC AWAL
   m_EditorClassIdentifier: 
   Judul: 
-  Section: 0
+  Section: 1
   BgDialogue: {fileID: 0}
-  ListCharTalk: []
-  SprBoxChar: {fileID: 0}
-  CharName: 
-  Dialogue: 
+  ListCharTalk:
+  - SprTalkChar: {fileID: 0}
+    TalkCharPos: 1
+    IsTalk: 0
+    isAnimated: 0
+    anim: 
+  - SprTalkChar: {fileID: 0}
+    TalkCharPos: 2
+    IsTalk: 0
+    isAnimated: 0
+    anim: 
+  - SprTalkChar: {fileID: 448583185, guid: 9b96308d47919b74fae8cb1396cf5138, type: 3}
+    TalkCharPos: 3
+    IsTalk: 1
+    isAnimated: 1
+    anim: 
+  SprBoxChar: {fileID: 448583185, guid: 9b96308d47919b74fae8cb1396cf5138, type: 3}
+  CharName: zack
+  Dialogue: ini aku zack
   SFXMusic: {fileID: 0}
