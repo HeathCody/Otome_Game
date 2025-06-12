@@ -8,7 +8,11 @@ public class MusicManager : MonoBehaviour
     public AudioSource SFXSrc;
 
     public AudioClip backsoundMainMenu;
+    public GameplayManager gameplayManager;
     public DialogueManager dialogueManager;
+    public UiNaration uiNaration;
+    public UiCinematic uiCinematic;
+
     public UISettings uiSettings;
 
     //instance
@@ -44,7 +48,10 @@ public class MusicManager : MonoBehaviour
     {
         if (scene.name == "Game")
         {
+            gameplayManager = GameObject.Find("GameplayManager").GetComponent<GameplayManager>();
             dialogueManager = GameObject.Find("GameplayManager").GetComponent<DialogueManager>();
+            uiNaration = GameObject.Find("Ui-Naration").GetComponent<UiNaration>();
+            uiCinematic = GameObject.Find("Ui-Cinematic").GetComponent<UiCinematic>();
         }
     }
 
@@ -65,11 +72,34 @@ public class MusicManager : MonoBehaviour
     }
     public void PlayBacksound()
     {
-        backsoundSrc.clip = dialogueManager.currentConversation.Backsound;
+        switch (gameplayManager.currentEventGame)
+        {
+            case EventGame.OpenConversation:
+                backsoundSrc.clip = dialogueManager.currentConversation.Backsound;
+                break;
+            case EventGame.OpenNaration:
+                backsoundSrc.clip = uiNaration.currentNaration.Backsound;
+                break;
+            case EventGame.OpenCinematic:
+                backsoundSrc.clip = uiCinematic.currentCinematic.Backsound;
+                break;
+        }
+        
         backsoundSrc.Play();
     }
     public void PlaySFX()
     {
-        SFXSrc.PlayOneShot(dialogueManager.currentDialogue.SFXMusic);
+        switch (gameplayManager.currentEventGame)
+        {
+            case EventGame.OpenConversation:
+                SFXSrc.PlayOneShot(dialogueManager.currentDialogue.SFXMusic);
+                break;
+            case EventGame.OpenNaration:
+                SFXSrc.PlayOneShot(uiNaration.currentNaration.SFXMusic);
+                break;
+            case EventGame.OpenCinematic:
+                SFXSrc.PlayOneShot(uiCinematic.currentCinematic.SFXMusic);
+                break;
+        }
     }
 }

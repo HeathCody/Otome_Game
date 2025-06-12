@@ -7,6 +7,8 @@ public class NarationSO : ScriptableObject
 {
     public string tittle;
     public List<NarationData> listNarationData;
+    public AudioClip Backsound;
+    public AudioClip SFXMusic;
     [EnumToggleButtons]
     public EventGame eventEndCinematic;
     [ShowIf("eventEndCinematic", EventGame.OpenConversation)] public ConversationSO conversation;

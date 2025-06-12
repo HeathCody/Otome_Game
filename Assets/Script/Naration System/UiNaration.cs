@@ -11,7 +11,7 @@ public class UiNaration : MonoBehaviour
     [SerializeField] private Color colorSemiBlack;
     [SerializeField] private TextMeshProUGUI txtNaration;
     [SerializeField] private Button btnNaration;
-    private NarationSO currentNaration;
+    public NarationSO currentNaration;
     int indexNaration;
 
     //efek
@@ -38,6 +38,8 @@ public class UiNaration : MonoBehaviour
         }
         txtNaration.text = currentNaration.listNarationData[indexNaration].Naration;
         panelNaration.SetActive(true);
+        MusicManager.Instance.PlayBacksound();
+        MusicManager.Instance.PlaySFX();
         btnNaration.Select();
         switch (currentNaration.effectstartEvent)
         {

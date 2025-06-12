@@ -640,10 +640,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 989724673896058976}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: BackState
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2996,6 +2996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e872375e3625648875a03c5061b851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelSettings: {fileID: 0}
   textSpeedSld: {fileID: 1180198250965741277}
   AutoTextSpeedSld: {fileID: 1489294011693674641}
   musicVolumeSld: {fileID: 1978977246753971191}

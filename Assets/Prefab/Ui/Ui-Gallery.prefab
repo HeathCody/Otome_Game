@@ -34,10 +34,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -687.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3899583321011816420
 CanvasRenderer:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 8
   indexButton: 8
   imgButton: {fileID: 4636031096509124040}
@@ -324,10 +324,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1900, y: -402.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4915779697583858248
 CanvasRenderer:
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 7
   indexButton: 7
   imgButton: {fileID: 425515587628859991}
@@ -476,10 +476,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 800, y: -687.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8057184017152927432
 CanvasRenderer:
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 9
   indexButton: 9
   imgButton: {fileID: 113794160740718806}
@@ -628,10 +628,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1350, y: -117.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3955889237241107142
 CanvasRenderer:
@@ -739,7 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 2
   indexButton: 2
   imgButton: {fileID: 6030192627659899308}
@@ -906,10 +906,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1350, y: -687.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4714485557319477803
 CanvasRenderer:
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 10
   indexButton: 10
   imgButton: {fileID: 8281211905733744888}
@@ -1058,10 +1058,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1900, y: -687.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &15047048747153359
 CanvasRenderer:
@@ -1169,7 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 11
   indexButton: 11
   imgButton: {fileID: 5544787861397211978}
@@ -1210,10 +1210,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 800, y: -402.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &26905919008902750
 CanvasRenderer:
@@ -1321,7 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 5
   indexButton: 5
   imgButton: {fileID: 5903756301169151768}
@@ -1478,7 +1478,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3032015646259488449}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: UiPanelGallery, Assembly-CSharp
           m_MethodName: CloseGalleryImage
           m_Mode: 1
@@ -1687,10 +1687,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1900, y: -117.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6280612772324000940
 CanvasRenderer:
@@ -1798,7 +1798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 3
   indexButton: 3
   imgButton: {fileID: 5861611437080156486}
@@ -1946,10 +1946,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1350, y: -402.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8915371035926944922
 CanvasRenderer:
@@ -2057,7 +2057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 6
   indexButton: 6
   imgButton: {fileID: 1660308992864900257}
@@ -2125,14 +2125,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.566546, g: 0.5149519, b: 0.9924528, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 46f667ddcb8553140a09ad581fb2f410, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2176,10 +2176,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 800, y: -117.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4047198330382019160
 CanvasRenderer:
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 1
   indexButton: 1
   imgButton: {fileID: 8241928821749643602}
@@ -2364,10 +2364,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -117.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6745498945058886648
 CanvasRenderer:
@@ -2475,7 +2475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Prologue School
   indexButton: 0
   imgButton: {fileID: 2292523703599619720}
@@ -2515,7 +2515,7 @@ RectTransform:
   m_Father: {fileID: 5967777231900107014}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.8, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2726,7 +2726,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2150, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &4329306298860490760
 MonoBehaviour:
@@ -2800,10 +2800,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 903213002311111705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -402.5}
-  m_SizeDelta: {x: 500, y: 235}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8245747074473663322
 CanvasRenderer:
@@ -2911,7 +2911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403d1103a7c4b254b91fa109ffa02451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiGallery: {fileID: 3032015646259488449}
+  UiGallery: {fileID: 0}
   tittle: Cinema 4
   indexButton: 4
   imgButton: {fileID: 7825495026487627602}

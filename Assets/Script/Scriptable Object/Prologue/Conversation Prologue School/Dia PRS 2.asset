@@ -26,8 +26,9 @@ MonoBehaviour:
     IsTalk: 1
     isAnimated: 1
     anim: SlideDown
-  SprBoxChar: {fileID: 0}
   CharName: Anak B
   Dialogue: 'Oke! Nggak sabarnya nunggu pulang
 
     Kamu nanti juga ikut, kan?'
+  SprBoxChar: {fileID: -2093560766, guid: 504adf704d48c3347b5e6c7de8e804b4, type: 3}
+  SFXMusic: {fileID: 0}

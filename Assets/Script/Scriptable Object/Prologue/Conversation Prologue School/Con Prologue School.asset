@@ -29,7 +29,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5d1baace6f1f7c349931ba7356a9ca81, type: 2}
   - {fileID: 11400000, guid: e329b83e7e798194fbabf7f0b6036eb8, type: 2}
   eventEndDialogue: 6
-  conversation: {fileID: 0}
+  conversation: {fileID: 11400000, guid: 99c23886f23240e449bbeadb51cc6f69, type: 2}
   choice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 11400000, guid: 282ee61bef86c1d41adc8f8af1a9c528, type: 2}

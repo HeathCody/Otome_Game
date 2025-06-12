@@ -10,7 +10,7 @@ public class UiCinematic : MonoBehaviour
     [SerializeField] private Image imgCinematic;
     [SerializeField] private Button btnCinematic;
 
-    private CinematicSO currentCinematic;
+    public CinematicSO currentCinematic;
 
     //efek
     [SerializeField] private CanvasGroup canvasGroup;
@@ -25,6 +25,8 @@ public class UiCinematic : MonoBehaviour
         currentCinematic = cinemaSo;
         imgCinematic.sprite = currentCinematic.sprCinematic;
         panelCinematic.SetActive(true);
+        MusicManager.Instance.PlayBacksound();
+        MusicManager.Instance.PlaySFX();
         btnCinematic.Select();
         switch (currentCinematic.effectStartEvent)
         {

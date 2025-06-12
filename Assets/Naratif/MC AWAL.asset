@@ -19,7 +19,7 @@ MonoBehaviour:
   - SprTalkChar: {fileID: 0}
     TalkCharPos: 1
     IsTalk: 0
-    isAnimated: 0
+    isAnimated: 1
     anim: 
   - SprTalkChar: {fileID: 0}
     TalkCharPos: 2

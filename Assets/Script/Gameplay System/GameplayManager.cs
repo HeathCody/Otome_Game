@@ -9,7 +9,7 @@ public class GameplayManager : MonoBehaviour, ILoadSaveObjects
 {
     [FoldoutGroup("New Game")][SerializeField] string newGameEventTittle;
     [FoldoutGroup("New Game")][SerializeField] EventGame newGameEventGame;
-    [FoldoutGroup("Gameplay Manager")][ReadOnly][SerializeField] EventGame currentEventGame;
+    [FoldoutGroup("Gameplay Manager")][SerializeField] public EventGame currentEventGame;
     [FoldoutGroup("Gameplay Manager")][ReadOnly][SerializeField] string currentEventTittle;
     [FoldoutGroup("Gameplay Manager")][SerializeField] ListGameEvent listGameEvent;
     [FoldoutGroup("Gameplay Manager")][SerializeField] DialogueManager dialogueManager;

@@ -50,6 +50,14 @@ public class UiDialogue : MonoBehaviour
         }
         txtCharTalkName.text = currentDialogue.CharName;
         imgCharBox.sprite = currentDialogue.SprBoxChar;
+        if (imgCharBox.sprite != null)
+        {
+            panelCharBox.SetActive(true);
+        }
+        else
+        {
+            panelCharBox.SetActive(false);
+        }
         panelDialogue.SetActive(true);
         switch (effect)
         {
@@ -88,6 +96,7 @@ public class UiDialogue : MonoBehaviour
     }
     private void StartTalking()
     {
+
         canvasGroup.interactable = true;
         for (int i = 0; i < listImgCharTalk.Count; i++)
         {
@@ -100,6 +109,9 @@ public class UiDialogue : MonoBehaviour
                     listImgCharBlack[i].color = currentDialogue.ListCharTalk[j].IsTalk ? colorOnTalk : colorNotTalk;
                     listImgCharTalk[i].gameObject.SetActive(true);
                     listImgCharBlack[i].gameObject.SetActive(true);
+                    //reset animasi
+                    listImgCharTalk[i].GetComponent<Animator>().Play("Normal", 0, 0);
+                    listImgCharBlack[i].GetComponent<Animator>().Play("Normal", 0, 0);
                     if (currentDialogue.ListCharTalk[j].IsTalk) listImgCharTalk[i].transform.SetAsLastSibling();
                     if (currentDialogue.ListCharTalk[j].isAnimated)
                     {
@@ -126,9 +138,10 @@ public class UiDialogue : MonoBehaviour
                                 break;
                             case "CharFadeOut":
                                 listImgCharTalk[i].GetComponent<Animator>().SetTrigger("CharFadeOut");
+                                listImgCharBlack[i].GetComponent<Animator>().SetTrigger("CharFadeOut");
                                 break;
                             case "CharFadeIn":
-                                listImgCharTalk[i].GetComponent<Animator>().SetTrigger("CharFadeIn");
+                                listImgCharTalk[i].GetComponent<Animator>().Play("CharFadeIn", 0, 1f);
                                 break;
                         }
                     }

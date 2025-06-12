@@ -24,8 +24,8 @@ MonoBehaviour:
   - SprTalkChar: {fileID: -235366976, guid: 677ec2f3f5c76ee458486e11fecb336b, type: 3}
     TalkCharPos: 2
     IsTalk: 1
-    isAnimated: 0
-    anim: 
+    isAnimated: 1
+    anim: CharFadeIn
   - SprTalkChar: {fileID: 824475824, guid: 0e6006decbcbd89468da0a12231dba99, type: 3}
     TalkCharPos: 3
     IsTalk: 0
@@ -36,7 +36,8 @@ MonoBehaviour:
     IsTalk: 0
     isAnimated: 0
     anim: 
-  SprBoxChar: {fileID: 0}
   CharName: Anak B
   Dialogue: Bunga juga! Oh, atau origami ya buat ngehias kasurmu? Kita bisa main
     bareng juga pakai itu.
+  SprBoxChar: {fileID: 0}
+  SFXMusic: {fileID: 0}

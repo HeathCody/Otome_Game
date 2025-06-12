@@ -12,7 +12,7 @@ public class UiPanelDataGame : MonoBehaviour
     [FoldoutGroup("Panel Data Game")][SerializeField] private List<PlayerData> listPlayerData => LoadSaveManager.instance.listPlayerData;
     [FoldoutGroup("Panel Data Game")][SerializeField] private GameObject panelLoadGameData;
     [FoldoutGroup("Panel Data Game")][SerializeField] private GameObject panelLoading;
-    [FoldoutGroup("Panel Data Game")][SerializeField] private TextMeshProUGUI txtTittle;
+/*    [FoldoutGroup("Panel Data Game")][SerializeField] private TextMeshProUGUI txtTittle;*/
     [FoldoutGroup("Panel Data Game")][SerializeField] private Button btnFirstPanelLoadGame;
     [FoldoutGroup("Panel Data Game")][SerializeField] private Toggle ToogleSaveGame;
     [FoldoutGroup("Panel Data Game")][SerializeField] private List<UiButtonGameData> listButtonData = new List<UiButtonGameData>();
@@ -36,7 +36,7 @@ public class UiPanelDataGame : MonoBehaviour
     {
         if (!value) return;
         isLoadGame = true;
-        txtTittle.text = "Load Game";
+        /*txtTittle.text = "Load Game";*/
         ResetListButton();
         SetListButton(indexPage);
     }
@@ -44,7 +44,7 @@ public class UiPanelDataGame : MonoBehaviour
     {
         if (!value) return;
         isLoadGame = false;
-        txtTittle.text = "Save Game";
+        /*txtTittle.text = "Save Game";*/
         ResetListButton();
         SetListButton(indexPage);
     }
@@ -60,7 +60,7 @@ public class UiPanelDataGame : MonoBehaviour
         btnFirstPanelLoadGame.Select();
         ResetListButton();
         isLoadGame = isMainMenu ? true : isLoadGame;
-        txtTittle.text = isLoadGame ? "Load Game" : "Save Game";
+        /*txtTittle.text = isLoadGame ? "Load Game" : "Save Game";*/
         SetListButton(indexPage);
     }
     public void ClosePanelLoadDataGame()

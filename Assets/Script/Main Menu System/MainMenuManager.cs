@@ -52,6 +52,10 @@ public class MainMenuManager : MonoBehaviour
                 menuState = MainMenuState.Gallery;
                 uiGallery.OpenGallery();
                 break;
+            case MainMenuState.Setting:
+                uiSettings.CloseSettings();
+                OpenMainMenu();
+                break;
         }
     }
     public void SetMainState(MainMenuState state)
@@ -85,9 +89,12 @@ public class MainMenuManager : MonoBehaviour
     }
     #endregion
     #region Setting
+    [FoldoutGroup("Settings")][SerializeField] private UISettings uiSettings;
     public void ButtonSetting()
     {
-
+        CloseMainMenu();
+        menuState = MainMenuState.Setting;
+        uiSettings.OpenSettings();
     }
     #endregion
     public void ButtonQuit()

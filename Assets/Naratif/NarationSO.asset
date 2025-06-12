@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: NarationSO
   m_EditorClassIdentifier: 
   tittle: 
-  listNarationData: []
+  listNarationData:
+  - isHaveImage: 1
+    sprBackground: {fileID: 0}
+    Naration: 
+  Backsound: {fileID: 0}
+  SFXMusic: {fileID: 0}
   eventEndCinematic: 0
   conversation: {fileID: 0}
   choice: {fileID: 0}

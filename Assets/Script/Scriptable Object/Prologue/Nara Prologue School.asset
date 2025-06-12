@@ -17,6 +17,8 @@ MonoBehaviour:
   - isHaveImage: 0
     sprBackground: {fileID: 0}
     Naration: Beberapa minggu kemudian...
+  Backsound: {fileID: 8300000, guid: cbaf5487c4da2104b93b60d3095ca66f, type: 3}
+  SFXMusic: {fileID: 8300000, guid: da65cf60080c1ed4ca9940ac478c4f85, type: 3}
   eventEndCinematic: 1
   conversation: {fileID: 11400000, guid: 897f72c677e33824fbe68a71d271804f, type: 2}
   choice: {fileID: 0}

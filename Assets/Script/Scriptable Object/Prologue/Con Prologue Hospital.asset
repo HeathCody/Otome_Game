@@ -14,10 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tittle: Prologue Hospital
   sprBackgroundDialogue: {fileID: 21300000, guid: 225b7c7c08104354eae0b3814f7236c5, type: 3}
-  ListDialogue: []
+  Backsound: {fileID: 0}
+  ListDialogue:
+  - {fileID: 11400000, guid: 3e5b1dbe83d72c942b46a22f5689acd2, type: 2}
+  - {fileID: 11400000, guid: 26fd5c82ac912e2448e738151e86f401, type: 2}
   eventEndDialogue: 0
   conversation: {fileID: 0}
   choice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 
+  effectStartEvent: 0
+  effectEndEvent: 0
