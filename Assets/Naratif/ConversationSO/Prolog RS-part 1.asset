@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
+  m_Name: Prolog RS-part 1
+  m_EditorClassIdentifier: 
+  tittle: 
+  sprBackgroundDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
+  Backsound: {fileID: 8300000, guid: e31c61883f444e347823dd3dfa484d3d, type: 3}
+  ListDialogue:
+  - {fileID: 11400000, guid: 90ac1845d1e747248ad4e5e1c53b39e6, type: 2}
+  - {fileID: 11400000, guid: 9b4c157a718f35a469942d43b81c04a4, type: 2}
+  - {fileID: 11400000, guid: 3909073c27aa1924f9dee56cc48979f7, type: 2}
+  - {fileID: 11400000, guid: e435f310396ac7d4d8f2c9e6646627ce, type: 2}
+  - {fileID: 11400000, guid: 3e42c97f148bc7947a886183a87e0d71, type: 2}
+  - {fileID: 11400000, guid: 05db3160d1358a440817a2031279443b, type: 2}
+  - {fileID: 11400000, guid: 57546506d6432b44192363f4ac7f6a16, type: 2}
+  - {fileID: 11400000, guid: 21ddd6af19f16cd4399b0388f7256f2d, type: 2}
+  - {fileID: 11400000, guid: fbfa62d9f2d36c7458ae4878f012fafd, type: 2}
+  - {fileID: 11400000, guid: c2ba09ff809eebc43b3d5bc9b26307b9, type: 2}
+  - {fileID: 11400000, guid: c2aa227550da17f40a33e4c321248a49, type: 2}
+  - {fileID: 11400000, guid: c92daa65f50c099419c661bd964602dc, type: 2}
+  - {fileID: 11400000, guid: 2200c27ac6964bd499984b1a16aaa6c8, type: 2}
+  - {fileID: 11400000, guid: d35f662b7595e444aa42af5f200bc592, type: 2}
+  - {fileID: 11400000, guid: d70f46189e5eebb4996532bec3652466, type: 2}
+  - {fileID: 11400000, guid: 1243bda7462fba5409d95dfd62837ad0, type: 2}
+  - {fileID: 11400000, guid: 648e4ce60836f5348b41718835900e04, type: 2}
+  - {fileID: 11400000, guid: 4f21f15b438996548b2dc4b8ed8191a1, type: 2}
+  - {fileID: 11400000, guid: 5fe5cb7451961be41b22961f9f52e0e2, type: 2}
+  - {fileID: 11400000, guid: 292a08bbd6b562b4eb8814f080053264, type: 2}
+  - {fileID: 11400000, guid: c289a38900479444a9ad6d31553cc337, type: 2}
+  - {fileID: 11400000, guid: a2a24d297e14602478b3345766183275, type: 2}
+  - {fileID: 11400000, guid: 7d5ebec11167c074d933262652b39cc4, type: 2}
+  eventEndDialogue: 0
+  conversation: {fileID: 0}
+  choice: {fileID: 0}
+  cinematic: {fileID: 0}
+  naration: {fileID: 0}
+  minigameName: 
+  effectStartEvent: 0
+  effectEndEvent: 0
