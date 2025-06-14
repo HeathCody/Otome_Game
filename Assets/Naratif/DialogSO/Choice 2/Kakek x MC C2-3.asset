@@ -10,13 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e0f883340298643b2d6ea350b089ad, type: 3}
-  m_Name: Monolog 4
+  m_Name: Kakek x MC C2-3
   m_EditorClassIdentifier: 
-  Judul: MC sendirian di RS
+  Judul: 
   Section: 0
   BgDialogue: {fileID: 0}
-  ListCharTalk: []
-  CharName: 
-  Dialogue: 'Selama ini, aku terus membebani ayah dengan semua biaya pengobatan ini. '
+  ListCharTalk:
+  - SprTalkChar: {fileID: 0}
+    TalkCharPos: 4
+    IsTalk: 1
+    isAnimated: 0
+    anim: 
+  CharName: Kakek
+  Dialogue: Setelah okter bilang hidupnya tak lama lagi, ibumu jadi selalu menatap
+    ke luar jendela sepertimu. Aku kira dengan membawa buku ini, dia bisa sedikit
+    lebih ceria.
   SprBoxChar: {fileID: 0}
-  SFXMusic: {fileID: 8300000, guid: da65cf60080c1ed4ca9940ac478c4f85, type: 3}
+  SFXMusic: {fileID: 0}

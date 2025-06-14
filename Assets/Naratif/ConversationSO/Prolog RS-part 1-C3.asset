@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
+  m_Name: Prolog RS-part 1-C3
+  m_EditorClassIdentifier: 
+  tittle: 
+  sprBackgroundDialogue: {fileID: 0}
+  Backsound: {fileID: 8300000, guid: e31c61883f444e347823dd3dfa484d3d, type: 3}
+  ListDialogue:
+  - {fileID: 11400000, guid: cf8e1efcb5145ec4893a51a47dd4ae2b, type: 2}
+  - {fileID: 11400000, guid: f2261301b44eac3438e54e41208cca43, type: 2}
+  - {fileID: 11400000, guid: 4df63435745b97d4b9458c2f54504079, type: 2}
+  - {fileID: 11400000, guid: 3daf3853e97079d4fafa9f14b8436888, type: 2}
+  - {fileID: 11400000, guid: 52d034e01d3557f4b925ce55e6b96b86, type: 2}
+  - {fileID: 11400000, guid: 911561618e151e247acb071dce080853, type: 2}
+  - {fileID: 11400000, guid: 1806324f36c2045469d3ade4abad950e, type: 2}
+  - {fileID: 11400000, guid: ff42f32276139e146880791dfc283378, type: 2}
+  eventEndDialogue: 1
+  conversation: {fileID: 0}
+  choice: {fileID: 0}
+  cinematic: {fileID: 0}
+  naration: {fileID: 0}
+  minigameName: 
+  effectStartEvent: 0
+  effectEndEvent: 0

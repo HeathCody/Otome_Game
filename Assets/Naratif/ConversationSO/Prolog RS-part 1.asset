@@ -39,9 +39,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c289a38900479444a9ad6d31553cc337, type: 2}
   - {fileID: 11400000, guid: a2a24d297e14602478b3345766183275, type: 2}
   - {fileID: 11400000, guid: 7d5ebec11167c074d933262652b39cc4, type: 2}
-  eventEndDialogue: 0
+  eventEndDialogue: 2
   conversation: {fileID: 0}
-  choice: {fileID: 0}
+  choice: {fileID: 11400000, guid: 6df75eeb8c251ce48ac207bb9de44d1a, type: 2}
   cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 
