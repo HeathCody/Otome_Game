@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
+  m_Name: Prolog RS-part 2
+  m_EditorClassIdentifier: 
+  tittle: MC dan Buku Guiding Star
+  sprBackgroundDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
+  Backsound: {fileID: 0}
+  ListDialogue:
+  - {fileID: 11400000, guid: 92fe67d5babd9b542bba796a0d0c8c95, type: 2}
+  - {fileID: 11400000, guid: 9a9dd5e2a334a2248bf94bd5d24a4a3f, type: 2}
+  - {fileID: 11400000, guid: 81fbf5ee6c2850d48927c876e4a99617, type: 2}
+  - {fileID: 11400000, guid: 0d291edd8619056488b7d28e04c99c1d, type: 2}
+  - {fileID: 11400000, guid: 3ba4ac92828022349b163b5546119755, type: 2}
+  - {fileID: 11400000, guid: 2bd31dc2995fd094ab95bde64febbc8d, type: 2}
+  - {fileID: 11400000, guid: 0dd78a0b63ad8a14a9a72715b08966e2, type: 2}
+  - {fileID: 11400000, guid: 4d36ede2dc7c1f84988d064b6b716d25, type: 2}
+  eventEndDialogue: 1
+  conversation: {fileID: 11400000, guid: da3c79e8c8dbfb54f9898a2467ce67cd, type: 2}
+  choice: {fileID: 0}
+  cinematic: {fileID: 0}
+  naration: {fileID: 0}
+  minigameName: 
+  effectStartEvent: 0
+  effectEndEvent: 0
