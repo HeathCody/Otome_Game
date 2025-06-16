@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e0f883340298643b2d6ea350b089ad, type: 3}
+  m_Name: MC x Buku 8
+  m_EditorClassIdentifier: 
+  Judul: MC mbuka buku U-tale
+  Section: 0
+  BgDialogue: {fileID: 0}
+  ListCharTalk: []
+  CharName: 
+  Dialogue: <i>Seorang raja harus bisa berbicara untuk rakyatnya. Jika melakukan
+    hal sekecil itu saja tidak bisa, apa yang akan terjadi pada kerajaannya?</i>
+  SprBoxChar: {fileID: 0}
+  SFXMusic: {fileID: 0}

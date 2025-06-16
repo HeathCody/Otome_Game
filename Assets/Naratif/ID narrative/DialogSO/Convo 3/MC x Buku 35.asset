@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e0f883340298643b2d6ea350b089ad, type: 3}
-  m_Name: MC x Buku 8
+  m_Name: MC x Buku 35
   m_EditorClassIdentifier: 
   Judul: MC mbuka buku U-tale
   Section: 0
   BgDialogue: {fileID: 0}
   ListCharTalk: []
   CharName: 
-  Dialogue: <i>Tapi, kalau putra mahkotanya bisu... terus gimana dia bisa memimpin
-    kerajaannya?</i>
-  SprBoxChar: {fileID: 21300000, guid: c64dd230dff9a414289ce3608d3b8b49, type: 3}
+  Dialogue: "<i>Tiba-tiba, sihir kembali muncul diatas halaman itu\u2014menulis suatu
+    kalimat di halaman yang kosong.</i>"
+  SprBoxChar: {fileID: 0}
   SFXMusic: {fileID: 0}
