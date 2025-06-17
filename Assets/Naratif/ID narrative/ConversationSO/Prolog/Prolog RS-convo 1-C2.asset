@@ -10,16 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
-  m_Name: Prolog RS-part 1-C1
+  m_Name: Prolog RS-convo 1-C2
   m_EditorClassIdentifier: 
   tittle: 
   sprBackgroundDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
   Backsound: {fileID: 8300000, guid: e31c61883f444e347823dd3dfa484d3d, type: 3}
   ListDialogue:
-  - {fileID: 11400000, guid: 13649ba1bbbb48341a39b2d92cbaea84, type: 2}
-  - {fileID: 11400000, guid: 0a00bbb9a0ea9da4cad45043db4efdde, type: 2}
-  - {fileID: 11400000, guid: 9c6c9794c2387d74aa03175785cedf18, type: 2}
-  - {fileID: 11400000, guid: 323a84956a48fc24eb682144d772f54e, type: 2}
+  - {fileID: 11400000, guid: 7276dfdd6afd46c498709038fea27355, type: 2}
+  - {fileID: 11400000, guid: d66920f2ff808164893baed498172956, type: 2}
+  - {fileID: 11400000, guid: 0dbfca37677a2ce4b8e89e6372f1c5c7, type: 2}
+  - {fileID: 11400000, guid: ff3de5910e92d914589f884a7cecd963, type: 2}
+  - {fileID: 11400000, guid: 63b97040e02d3614f80a3afa621f6045, type: 2}
+  - {fileID: 11400000, guid: 63b97040e02d3614f80a3afa621f6045, type: 2}
+  - {fileID: 11400000, guid: 5ee01275c7b09754087bd1b97b29af46, type: 2}
+  - {fileID: 11400000, guid: 1a6f633b8ace10542a75ac5b1197c42e, type: 2}
   eventEndDialogue: 1
   conversation: {fileID: 11400000, guid: a65d2eec4c01915439147d349a667a9c, type: 2}
   choice: {fileID: 0}

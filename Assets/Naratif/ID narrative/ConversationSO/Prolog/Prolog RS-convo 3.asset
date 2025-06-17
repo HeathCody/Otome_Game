@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
+  m_Name: Prolog RS-convo 3
+  m_EditorClassIdentifier: 
+  tittle: MC dan Buku Guiding Star
+  sprBackgroundDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
+  Backsound: {fileID: 8300000, guid: 8e56238036f04f34e919f61ff9c2bfc9, type: 3}
+  ListDialogue:
+  - {fileID: 11400000, guid: e9f39ec487abe2445a5804c6980db722, type: 2}
+  - {fileID: 11400000, guid: 2d3c6cf390686c5499b4392bf2638139, type: 2}
+  - {fileID: 11400000, guid: fd2e64c7e7ea36042a52c32c52e8e2c6, type: 2}
+  - {fileID: 11400000, guid: 3cc0b2c20d63e664e878c93426a29423, type: 2}
+  - {fileID: 11400000, guid: d7e795012ac77214280c536526c2d113, type: 2}
+  - {fileID: 11400000, guid: fcc88965c95fb834b9915f52fc82875d, type: 2}
+  - {fileID: 11400000, guid: f317732ab59212245a27d7892e0deb48, type: 2}
+  - {fileID: 11400000, guid: 3514bdebaea9fe047aa69fc5c29e8f1d, type: 2}
+  - {fileID: 11400000, guid: 504e8481fcaf4c549b7d2353548c2d13, type: 2}
+  - {fileID: 11400000, guid: 6d161f5fa005cd6489ffd9b9adca290f, type: 2}
+  - {fileID: 11400000, guid: ec818b5d8223b65429763a8aacdf6b30, type: 2}
+  - {fileID: 11400000, guid: 8a38cd836b5ce62448c8ee7cad6e9419, type: 2}
+  - {fileID: 11400000, guid: d6e7bd05ed5c3e54ebf9471ea4a18898, type: 2}
+  - {fileID: 11400000, guid: b63c6aa72ac97864a8da8ac8d7d6d50a, type: 2}
+  - {fileID: 11400000, guid: fa0de7f83e266444297c15faf3a02790, type: 2}
+  - {fileID: 11400000, guid: 585d81040418e7e468910f305568f0fd, type: 2}
+  - {fileID: 11400000, guid: f7a061ec0f641b44187dc4793282f3ec, type: 2}
+  - {fileID: 11400000, guid: 835e4cd98d462ec4cb074bdd234a47b4, type: 2}
+  - {fileID: 11400000, guid: cfaf114198492194ca744752257402d4, type: 2}
+  - {fileID: 11400000, guid: a2f66c7a6e8e12b4a8be06ee1255bd69, type: 2}
+  - {fileID: 11400000, guid: 22f6080ab08d8a2489ef3913d0942159, type: 2}
+  - {fileID: 11400000, guid: c486d2c80ae00f24b8ed12731032e66a, type: 2}
+  - {fileID: 11400000, guid: 3e11eab13016bfd40844bd54ea307a1e, type: 2}
+  - {fileID: 11400000, guid: 30d326431c8846948994f165edec0ab7, type: 2}
+  - {fileID: 11400000, guid: 45e782bffcd914346ac5efab3d73ee4a, type: 2}
+  - {fileID: 11400000, guid: 4c9a0caef54ec1c4490af9a5f342eb36, type: 2}
+  eventEndDialogue: 1
+  conversation: {fileID: 11400000, guid: 3e67806fc25a39246974bc2431e77a87, type: 2}
+  choice: {fileID: 0}
+  cinematic: {fileID: 0}
+  naration: {fileID: 11400000, guid: abcf886f0017dce4aa50f28a12baf7de, type: 2}
+  minigameName: 
+  effectStartEvent: 0
+  effectEndEvent: 0

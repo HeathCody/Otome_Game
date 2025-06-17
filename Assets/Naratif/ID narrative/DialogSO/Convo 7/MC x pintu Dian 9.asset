@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e0f883340298643b2d6ea350b089ad, type: 3}
-  m_Name: Kakek x MC 14 - convo 1 (emang kosong)
+  m_Name: MC x pintu Dian 9
   m_EditorClassIdentifier: 
-  Judul: Mock-up buku U-tale
+  Judul: MC sadar diri
   Section: 0
   BgDialogue: {fileID: 0}
   ListCharTalk: []
-  CharName: 
-  Dialogue: 
-  SprBoxChar: {fileID: 0}
+  CharName: Kamu
+  Dialogue: <i>Bener juga... Aku kan nggak bisa pergi kemana-mana.</i>
+  SprBoxChar: {fileID: 21300000, guid: 647e2dadcdb72ba44bfaa181fe2d59bf, type: 3}
   SFXMusic: {fileID: 0}
