@@ -1,11 +1,13 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Video;
 
 [CreateAssetMenu(fileName = "Cinematic SO", menuName = "Scriptable Objects/Cinematic SO")]
 public class CinematicSO : ScriptableObject
 {
     public string tittle;
     public Sprite sprCinematic;
+    public VideoClip videoClip;
     public AudioClip Backsound;
     public AudioClip SFXMusic;
     [EnumToggleButtons]

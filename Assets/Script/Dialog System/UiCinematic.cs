@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Video;
 using UnityEngine.UI;
 
 public class UiCinematic : MonoBehaviour
@@ -8,6 +9,7 @@ public class UiCinematic : MonoBehaviour
     [SerializeField] private GameplayManager gm;
     [SerializeField] private GameObject panelCinematic;
     [SerializeField] private Image imgCinematic;
+    [SerializeField] private VideoPlayer vidCinematic;
     [SerializeField] private Button btnCinematic;
 
     public CinematicSO currentCinematic;
@@ -23,7 +25,16 @@ public class UiCinematic : MonoBehaviour
     public void OpenCinematic(CinematicSO cinemaSo)
     {
         currentCinematic = cinemaSo;
-        imgCinematic.sprite = currentCinematic.sprCinematic;
+        //cek apakah video ato sprite
+        if(currentCinematic.sprCinematic != null)
+        {
+            imgCinematic.sprite = currentCinematic.sprCinematic;
+        }
+        else if (currentCinematic.videoClip != null)
+        {
+            vidCinematic.clip = currentCinematic.videoClip;
+            vidCinematic.Play();
+        }
         panelCinematic.SetActive(true);
         MusicManager.Instance.PlayBacksound();
         MusicManager.Instance.PlaySFX();

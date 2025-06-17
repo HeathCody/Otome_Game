@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fb0766b848d84640a8551a37a981ffe, type: 3}
+  m_Name: Try
+  m_EditorClassIdentifier: 
+  tittle: 
+  sprCinematic: {fileID: 0}
+  videoClip: {fileID: 32900000, guid: 958205e8095d6ad4eae2b1fa0fd4cd44, type: 3}
+  Backsound: {fileID: 0}
+  SFXMusic: {fileID: 0}
+  eventEndCinematic: 3
+  isCinematicUnlock: 0
+  nextConversation: {fileID: 0}
+  openChoice: {fileID: 0}
+  cinematic: {fileID: 11400000, guid: 095466f7a8c0dd946b5c5a0ded3bb3c5, type: 2}
+  naration: {fileID: 0}
+  minigameName: 
+  effectStartEvent: 0
+  effectEndEvent: 0

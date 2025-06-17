@@ -159,11 +159,39 @@ public class UiDialogue : MonoBehaviour
 
     IEnumerator TypeLine(DialogSO data)
     {
-        foreach (char c in data.Dialogue.ToCharArray())
+        string fullText = data.Dialogue;
+        txtDialogue.text = "";
+
+        int i = 0;
+        bool isInsideTag = false;
+
+        while (i < fullText.Length)
+        {
+            char currentChar = fullText[i];
+
+            // Deteksi tag buka <...>
+            if (currentChar == '<')
+                isInsideTag = true;
+
+            // Tambahkan karakter ke tampilan
+            txtDialogue.text += currentChar;
+
+            // Deteksi tag tutup >
+            if (currentChar == '>')
+                isInsideTag = false;
+
+            // Delay hanya kalau bukan sedang di dalam tag
+            if (!isInsideTag)
+                yield return new WaitForSeconds(textSpeed);
+
+            i++;
+        }
+
+        /*foreach (char c in data.Dialogue.ToCharArray())
         {
             txtDialogue.text += c;
             yield return new WaitForSeconds(textSpeed);
-        }
+        }*/
     }
 
     // Update is called once per frame
