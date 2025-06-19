@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Judul: MC mbuka buku U-tale
   Section: 0
-  BgDialogue: {fileID: 0}
+  BgDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
   ListCharTalk: []
   CharName: Kamu
-  Dialogue: <i>Cepat pakai selimut! Pura-pura tidur! Nanti susternya pasti langsung
-    pergi!</i>
+  Dialogue: <i>Pakai selimut! Pura-pura tidur! Nanti susternya pasti langsung pergi!</i>
   SprBoxChar: {fileID: 21300000, guid: 79a36ab897209904f9f782b82e8ffc4d, type: 3}
   SFXMusic: {fileID: 0}

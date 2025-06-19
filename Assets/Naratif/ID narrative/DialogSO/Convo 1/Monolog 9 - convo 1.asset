@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Judul: Kakek nyamperin MC
   Section: 0
-  BgDialogue: {fileID: 0}
+  BgDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
   ListCharTalk: []
   CharName: 
   Dialogue: 
   SprBoxChar: {fileID: 0}
-  SFXMusic: {fileID: 8300000, guid: 395d31e61fe72d44689f28cf3588fe9d, type: 3}
+  SFXMusic: {fileID: 8300000, guid: 53bcee5303ed1ed4fb772450311e8c35, type: 3}

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Judul: MC sendirian di RS
   Section: 0
-  BgDialogue: {fileID: 0}
+  BgDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
   ListCharTalk: []
   CharName: 
   Dialogue: <i>Operasi besar ku sudah dekat... nafasku terasa semakin berat.</i>
   SprBoxChar: {fileID: 0}
-  SFXMusic: {fileID: 8300000, guid: da65cf60080c1ed4ca9940ac478c4f85, type: 3}
+  SFXMusic: {fileID: 0}

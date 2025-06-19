@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Judul: MC mbuka buku U-tale
   Section: 0
-  BgDialogue: {fileID: 0}
+  BgDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
   ListCharTalk: []
   CharName: 
-  Dialogue: <i><b>Kosong!</b>Tak ada tulisan apapun disana. Dan halaman selanjutnya...
+  Dialogue: <i><b>Kosong!</b> Tak ada tulisan apapun disana. Dan halaman selanjutnya...
     dan halaman selanjutnya lagi juga sama!</i>
   SprBoxChar: {fileID: 0}
   SFXMusic: {fileID: 0}

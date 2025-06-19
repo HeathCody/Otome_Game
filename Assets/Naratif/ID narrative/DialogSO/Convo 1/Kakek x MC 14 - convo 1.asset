@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e0f883340298643b2d6ea350b089ad, type: 3}
-  m_Name: Kakek x MC 14 - convo 1 (emang kosong)
+  m_Name: Kakek x MC 14 - convo 1
   m_EditorClassIdentifier: 
   Judul: Mock-up buku U-tale
   Section: 0
   BgDialogue: {fileID: 0}
   ListCharTalk: []
   CharName: 
-  Dialogue: 
+  Dialogue: .....
   SprBoxChar: {fileID: 0}
   SFXMusic: {fileID: 0}
