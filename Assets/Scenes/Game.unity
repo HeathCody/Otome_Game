@@ -2274,8 +2274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2b74c6c1d6d9e4d8b406bc08943821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameEventTittle: Prolog RS-convo 1
-  newGameEventGame: 1
+  newGameEventTittle: Convo 0
+  newGameEventGame: 6
   currentEventGame: 0
   currentEventTittle: 
   listGameEvent: {fileID: 1298207983}
@@ -2378,6 +2378,8 @@ MonoBehaviour:
   - tittle: FlashWhite
     cinematic: {fileID: 11400000, guid: faa5eaa08fb8e5c4da84b43ae5d1c8e2, type: 2}
   listNaration:
+  - tittle: Convo 0
+    naration: {fileID: 11400000, guid: a28f49e8650ff25428b25943edb8bc33, type: 2}
   - tittle: Welcome ke Toko Buku - part 1
     naration: {fileID: 11400000, guid: abcf886f0017dce4aa50f28a12baf7de, type: 2}
   - tittle: Welcome ke Toko Buku - part 2
@@ -3810,6 +3812,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3226109042583724550, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226109042583724550, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 243.1102
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226109042583724550, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226109042583724550, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -38.444885
+      objectReference: {fileID: 0}
     - target: {fileID: 3642632553412517143, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
       propertyPath: m_ChildAlignment
       value: 4
@@ -4009,6 +4027,14 @@ PrefabInstance:
     - target: {fileID: 8636930973707498123, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885232091329116950, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -340
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885232091329116950, guid: 8ee202ad81ce742428e99bc268cdd1d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 170
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

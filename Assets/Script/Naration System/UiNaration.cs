@@ -87,7 +87,7 @@ public class UiNaration : MonoBehaviour
             if (currentNaration.listNarationData[indexNaration].isHaveImage)
             {
                 imgBackground.sprite = currentNaration.listNarationData[indexNaration].sprBackground;
-                imgBackground.color = colorSemiBlack;
+                imgBackground.color = Color.white;
             }
             else
             {

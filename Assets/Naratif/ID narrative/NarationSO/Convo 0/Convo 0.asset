@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Convo 0
   m_EditorClassIdentifier: 
   tittle: buat opening
-  listNarationData: []
+  listNarationData:
+  - isHaveImage: 1
+    sprBackground: {fileID: 21300000, guid: 0355862176d4dc34ba4fdf4b700b27c1, type: 3}
+    Naration: 
   Backsound: {fileID: 8300000, guid: da65cf60080c1ed4ca9940ac478c4f85, type: 3}
   SFXMusic: {fileID: 0}
   eventEndCinematic: 1
