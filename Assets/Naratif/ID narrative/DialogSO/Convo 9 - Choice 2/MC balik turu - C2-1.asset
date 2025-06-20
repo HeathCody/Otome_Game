@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e0f883340298643b2d6ea350b089ad, type: 3}
-  m_Name: MC x pintu Dian 10
+  m_Name: MC balik turu - C2-1
   m_EditorClassIdentifier: 
-  Judul: MC sadar diri
+  Judul: MC kabur dulu
   Section: 0
   BgDialogue: {fileID: 0}
   ListCharTalk: []
   CharName: 
-  Dialogue: <i>Tapi, melihat pintu itu lagi... aku merasa ada hal yang lebih indah
-    daripada terus berbaring disini. </i>
-  SprBoxChar: {fileID: 0}
+  Dialogue: Tapi, mana ada sihir itu nyata? Paling gara-gara aku kecapekan sampai
+    halusinasi gini.
+  SprBoxChar: {fileID: 21300000, guid: 6072c2f7a88e2c341a618f372d968c02, type: 3}
   SFXMusic: {fileID: 0}

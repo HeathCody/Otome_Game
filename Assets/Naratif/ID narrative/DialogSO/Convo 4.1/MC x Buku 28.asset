@@ -18,5 +18,5 @@ MonoBehaviour:
   ListCharTalk: []
   CharName: Kamu
   Dialogue: ...Penulisnya ...bercanda, ya?
-  SprBoxChar: {fileID: 21300000, guid: 05c795e87c6419648810b04f672f0e6b, type: 3}
+  SprBoxChar: {fileID: 21300000, guid: 509a1f321b41d9742a182b4e9093a835, type: 3}
   SFXMusic: {fileID: 0}

@@ -12,19 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
   m_Name: Prolog RS-convo 7
   m_EditorClassIdentifier: 
-  tittle: MC sadar diri
+  tittle: MC dan Buku Guiding Star
   sprBackgroundDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
-  Backsound: {fileID: 0}
-  ListDialogue:
-  - {fileID: 11400000, guid: ea37f30feeae6e446b62d657667d67de, type: 2}
-  - {fileID: 11400000, guid: f9bfac3c713056043900cdea4c2192f8, type: 2}
-  - {fileID: 11400000, guid: 77a5f8c31cdc30b458d764c6a6acb16a, type: 2}
-  - {fileID: 11400000, guid: 72c09263138f65c4983d4d47814fe9a9, type: 2}
-  eventEndDialogue: 1
-  conversation: {fileID: 0}
+  Backsound: {fileID: 8300000, guid: 47d2544fbb7ebf14ca75f0ecf54a29d1, type: 3}
+  ListDialogue: []
+  eventEndDialogue: 3
+  conversation: {fileID: 11400000, guid: 59e6d0fb45a50c046acb516a398ec0fc, type: 2}
   choice: {fileID: 0}
-  cinematic: {fileID: 0}
+  cinematic: {fileID: 11400000, guid: 2cc996bba4c8c254a91118ca3c16d1a8, type: 2}
   naration: {fileID: 11400000, guid: ceba44be969971041b98bb188d3eabd8, type: 2}
   minigameName: 
   effectStartEvent: 3
-  effectEndEvent: 0
+  effectEndEvent: 4

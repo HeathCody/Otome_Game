@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e0f883340298643b2d6ea350b089ad, type: 3}
-  m_Name: MC x pintu Dian 1
+  m_Name: MC x pintu Dian 2
   m_EditorClassIdentifier: 
   Judul: MC ngeliat sihir buku yang terbang ke pintu RS
   Section: 0
   BgDialogue: {fileID: 0}
   ListCharTalk: []
   CharName: 
-  Dialogue: <i>Percikan cahaya emas terbang dari kalimat itu. Dia berputar diatas
-    kepalaku, lalu terbang kearah pintu.</i>
+  Dialogue: <i>Seperti sihir menjadi kenyataan, aku ak bisa mempercayainya.</i>
   SprBoxChar: {fileID: 0}
   SFXMusic: {fileID: 0}

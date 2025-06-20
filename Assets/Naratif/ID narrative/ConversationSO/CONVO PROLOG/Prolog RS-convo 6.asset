@@ -17,11 +17,6 @@ MonoBehaviour:
   Backsound: {fileID: 8300000, guid: 47d2544fbb7ebf14ca75f0ecf54a29d1, type: 3}
   ListDialogue:
   - {fileID: 11400000, guid: 9590207b625a8e44dab57a2458c4a053, type: 2}
-  - {fileID: 11400000, guid: b0ce35122366e7a45ba08bed397f1615, type: 2}
-  - {fileID: 11400000, guid: 4b251b354dfa9f042908e2214b1432bf, type: 2}
-  - {fileID: 11400000, guid: 5fc53891f6483b24d9bb3dbe57301601, type: 2}
-  - {fileID: 11400000, guid: eb48ba4252b0a174baf77e961b60a596, type: 2}
-  - {fileID: 11400000, guid: d870080b6065641448b4607c0cf1ae03, type: 2}
   eventEndDialogue: 1
   conversation: {fileID: 11400000, guid: 59e6d0fb45a50c046acb516a398ec0fc, type: 2}
   choice: {fileID: 0}
