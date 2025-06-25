@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
+  m_Name: Prolog Toko Buku-convo 1
+  m_EditorClassIdentifier: 
+  tittle: 
+  sprBackgroundDialogue: {fileID: 21300000, guid: 2736b988523fbcc40be6570ce167d384, type: 3}
+  Backsound: {fileID: 0}
+  ListDialogue:
+  - {fileID: 11400000, guid: b0767b78ca2a18c4f8acebc854cd60e2, type: 2}
+  - {fileID: 11400000, guid: e286e718a3faaba4ab222770e5eb441e, type: 2}
+  - {fileID: 11400000, guid: 6a1b8966bc92f6f46979d18a63e9029d, type: 2}
+  eventEndDialogue: 0
+  conversation: {fileID: 0}
+  choice: {fileID: 0}
+  cinematic: {fileID: 0}
+  naration: {fileID: 0}
+  minigameName: 
+  effectStartEvent: 0
+  effectEndEvent: 0
