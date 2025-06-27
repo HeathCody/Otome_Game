@@ -19,7 +19,7 @@ MonoBehaviour:
   SFXMusic: {fileID: 0}
   eventEndCinematic: 1
   isCinematicUnlock: 0
-  nextConversation: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: 6e84837fca7fcb24c917fe6b077004b4, type: 2}
   openChoice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 0}

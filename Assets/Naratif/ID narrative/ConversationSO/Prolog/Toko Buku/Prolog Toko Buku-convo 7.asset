@@ -17,7 +17,7 @@ MonoBehaviour:
   Backsound: {fileID: 0}
   ListDialogue:
   - {fileID: 11400000, guid: 3bdca2604d5e14646a22b969155b7d2b, type: 2}
-  eventEndDialogue: 6
+  eventEndDialogue: 3
   conversation: {fileID: 0}
   choice: {fileID: 0}
   cinematic: {fileID: 0}

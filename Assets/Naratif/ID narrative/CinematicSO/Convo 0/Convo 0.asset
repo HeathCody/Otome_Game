@@ -9,21 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8682b05a0e5c0d47b3236bfc5b018e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fb0766b848d84640a8551a37a981ffe, type: 3}
   m_Name: Convo 0
   m_EditorClassIdentifier: 
-  tittle: buat opening
-  listNarationData:
-  - isHaveImage: 1
-    sprBackground: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
-    Naration: ' '
+  tittle: 
+  sprCinematic: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
+  videoClip: {fileID: 0}
   Backsound: {fileID: 8300000, guid: da65cf60080c1ed4ca9940ac478c4f85, type: 3}
   SFXMusic: {fileID: 0}
   eventEndCinematic: 1
-  conversation: {fileID: 11400000, guid: 5cdd69592eefa2645b8f64be01137fb5, type: 2}
-  choice: {fileID: 0}
+  isCinematicUnlock: 0
+  nextConversation: {fileID: 11400000, guid: 5cdd69592eefa2645b8f64be01137fb5, type: 2}
+  openChoice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 
-  effectstartEvent: 0
+  effectStartEvent: 0
   effectEndEvent: 0

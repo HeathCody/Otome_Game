@@ -9,18 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
-  m_Name: Prolog RS-convo 5 (end narattion)
+  m_Script: {fileID: 11500000, guid: 6fb0766b848d84640a8551a37a981ffe, type: 3}
+  m_Name: Dian tengkyu
   m_EditorClassIdentifier: 
-  tittle: buat penanda aja
-  sprBackgroundDialogue: {fileID: 0}
+  tittle: 
+  sprCinematic: {fileID: 21300000, guid: 67082553a1dc1bf49bd7d067861b0181, type: 3}
+  videoClip: {fileID: 0}
   Backsound: {fileID: 0}
-  ListDialogue: []
-  eventEndDialogue: 6
-  conversation: {fileID: 0}
-  choice: {fileID: 0}
+  SFXMusic: {fileID: 0}
+  eventEndCinematic: 0
+  isCinematicUnlock: 0
+  nextConversation: {fileID: 0}
+  openChoice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 
   effectStartEvent: 1
-  effectEndEvent: 4
+  effectEndEvent: 0

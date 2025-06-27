@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tittle: 
   sprBackgroundDialogue: {fileID: 21300000, guid: 1166b0467d418514c9e79f31b60ceb6b, type: 3}
-  Backsound: {fileID: 8300000, guid: cbaf5487c4da2104b93b60d3095ca66f, type: 3}
+  Backsound: {fileID: 8300000, guid: 8e56238036f04f34e919f61ff9c2bfc9, type: 3}
   ListDialogue:
   - {fileID: 11400000, guid: 263a06bf39b1b9c449e7f4ca4b01e28e, type: 2}
   - {fileID: 11400000, guid: fd598faebf3474943bf97092780e1951, type: 2}

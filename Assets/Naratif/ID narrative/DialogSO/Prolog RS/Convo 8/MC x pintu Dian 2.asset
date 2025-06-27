@@ -17,6 +17,6 @@ MonoBehaviour:
   BgDialogue: {fileID: 0}
   ListCharTalk: []
   CharName: 
-  Dialogue: <i>Seperti sihir menjadi kenyataan, aku ak bisa mempercayainya.</i>
+  Dialogue: <i>Seperti sihir menjadi kenyataan, aku tak bisa mempercayainya.</i>
   SprBoxChar: {fileID: 0}
   SFXMusic: {fileID: 0}
