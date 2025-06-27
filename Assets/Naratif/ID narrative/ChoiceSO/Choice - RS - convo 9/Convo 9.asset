@@ -15,17 +15,17 @@ MonoBehaviour:
   tittle: MC mau kabur atau ndak?
   listChoice:
   - ChoiceTittle: <i>Pergi kearah pintu.</i>
-    eventSelectChoice: 0
+    eventSelectChoice: 1
     listReputation: []
-    conversation: {fileID: 0}
+    conversation: {fileID: 11400000, guid: de2596716e6c35944923e739f5644b2d, type: 2}
     choice: {fileID: 0}
     cinematic: {fileID: 0}
     naration: {fileID: 0}
     minigameName: 
   - ChoiceTittle: <i>Balik tidur aja.</i>
-    eventSelectChoice: 0
+    eventSelectChoice: 1
     listReputation: []
-    conversation: {fileID: 0}
+    conversation: {fileID: 11400000, guid: 2b973f029db1dc841a4abac0409969e5, type: 2}
     choice: {fileID: 0}
     cinematic: {fileID: 0}
     naration: {fileID: 0}

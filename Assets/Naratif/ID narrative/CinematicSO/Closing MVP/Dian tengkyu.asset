@@ -17,6 +17,7 @@ MonoBehaviour:
   videoClip: {fileID: 0}
   Backsound: {fileID: 0}
   SFXMusic: {fileID: 0}
+  strChapter: Chapter 1
   eventEndCinematic: 0
   isCinematicUnlock: 0
   nextConversation: {fileID: 0}

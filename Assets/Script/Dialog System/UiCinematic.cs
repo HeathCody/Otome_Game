@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UiCinematic : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class UiCinematic : MonoBehaviour
         MusicManager.Instance.PlayBacksound();
         MusicManager.Instance.PlaySFX();
         btnCinematic.Select();
+        LoadSaveManager.instance.loadSaveChapter = currentCinematic.strChapter;
         switch (currentCinematic.effectStartEvent)
         {
             case EffectEvent.None:
@@ -184,6 +186,9 @@ public class UiCinematic : MonoBehaviour
         if (currentCinematic == null) return;
         switch (currentCinematic.eventEndCinematic)
         {
+            case EventGame.None:
+                SceneManager.LoadScene("Main-Menu");
+                break;
             case EventGame.OpenConversation:
                 gm.OpenConversation(currentCinematic.nextConversation);
                 break;

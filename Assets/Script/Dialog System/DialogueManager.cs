@@ -1,6 +1,7 @@
 using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -71,6 +72,9 @@ public class DialogueManager : MonoBehaviour
         }
         switch (currentConversation.eventEndDialogue)
         {
+            case EventGame.None:
+                SceneManager.LoadScene("Main-Menu");
+                break;
             case EventGame.OpenConversation:
                 gm.OpenConversation(currentConversation.conversation);
                 break;

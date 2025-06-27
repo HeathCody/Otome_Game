@@ -10,6 +10,7 @@ public class CinematicSO : ScriptableObject
     public VideoClip videoClip;
     public AudioClip Backsound;
     public AudioClip SFXMusic;
+    public string strChapter;
     [EnumToggleButtons]
     public EventGame eventEndCinematic;
     public bool isCinematicUnlock;

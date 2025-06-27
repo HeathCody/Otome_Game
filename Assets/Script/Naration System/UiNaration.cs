@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UiNaration : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class UiNaration : MonoBehaviour
         MusicManager.Instance.PlayBacksound();
         MusicManager.Instance.PlaySFX();
         btnNaration.Select();
+        LoadSaveManager.instance.loadSaveChapter = currentNaration.strChapter;
         switch (currentNaration.effectstartEvent)
         {
             case EffectEvent.None:
@@ -115,6 +117,9 @@ public class UiNaration : MonoBehaviour
         if (currentNaration == null) return;
         switch (currentNaration.eventEndCinematic)
         {
+            case EventGame.None:
+                SceneManager.LoadScene("Main-Menu");
+                break;
             case EventGame.OpenConversation:
                 gm.OpenConversation(currentNaration.conversation);
                 break;

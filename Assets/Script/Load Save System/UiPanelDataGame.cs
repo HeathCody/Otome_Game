@@ -89,6 +89,11 @@ public class UiPanelDataGame : MonoBehaviour
     void SetButtonData(int indexbutton, PlayerData data)
     {
         listButtonData[indexbutton].SetButtonData(data.fileName);
+
+        // Muat screenshot
+        Texture2D screenshot = LoadThumbnailForSlot(data.indexData);
+        if (screenshot != null)
+            listButtonData[indexbutton].SetThumbnail(screenshot); // Pastikan ada method ini di UiButtonGameData
     }
     int GetIndexListPlayer(int indexdata)
     {
@@ -153,5 +158,21 @@ public class UiPanelDataGame : MonoBehaviour
     {
         yield return new WaitUntil(() => LoadSaveManager.instance.onLoadSave == false);
         panelLoading.SetActive(false);
+    }
+
+    private Texture2D LoadThumbnailForSlot(int index)
+    {
+        string fileName = $"save_screenshot-{index + 1}.png"; // +1 karena filename Save pakai "-1", "-2", dst.
+        string fullPath = System.IO.Path.Combine(Application.persistentDataPath, fileName);
+
+        if (System.IO.File.Exists(fullPath))
+        {
+            byte[] bytes = System.IO.File.ReadAllBytes(fullPath);
+            Texture2D tex = new Texture2D(2, 2);
+            tex.LoadImage(bytes);
+            return tex;
+        }
+
+        return null;
     }
 }
