@@ -33,4 +33,9 @@ public class UIMainMenu : MonoBehaviour
                 break;
         }
     }
+
+    public void changeEmergency()
+    {
+        Chapter = "Chapter 1";
+    }
 }

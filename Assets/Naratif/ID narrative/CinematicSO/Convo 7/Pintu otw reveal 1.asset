@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb0766b848d84640a8551a37a981ffe, type: 3}
   m_Name: Pintu otw reveal 1
   m_EditorClassIdentifier: 
-  tittle: 
+  tittle: Pintu otw reveal 1
   visualCinematic: 1
   sprCinematic: {fileID: 0}
   videoClip: {fileID: 32900000, guid: 7c28964188d324247b83060dd0b0a906, type: 3}

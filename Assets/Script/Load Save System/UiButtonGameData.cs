@@ -11,9 +11,6 @@ public class UiButtonGameData : MonoBehaviour
     [SerializeField] private Image imgButton;
     [SerializeField] private Sprite sprDefaultButton;
 
-    [Header("Thumbnail Screenshot")]
-    [SerializeField] private RawImage rawThumbnail; // <- Tambahkan ini di Inspector
-
     public void SetButtonData(string filename)
     {
         txtFileName.text = filename;
@@ -28,13 +25,5 @@ public class UiButtonGameData : MonoBehaviour
     {
         txtFileName.text = "No Data";
         imgButton.sprite = sprDefaultButton;
-        if (rawThumbnail != null)
-            rawThumbnail.texture = null;
-    }
-
-    public void SetThumbnail(Texture2D tex)
-    {
-        if (rawThumbnail != null)
-            rawThumbnail.texture = tex;
     }
 }

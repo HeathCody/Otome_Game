@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb0766b848d84640a8551a37a981ffe, type: 3}
   m_Name: Dian tengkyu
   m_EditorClassIdentifier: 
-  tittle: 
+  tittle: Dian tengkyu
+  visualCinematic: 0
   sprCinematic: {fileID: 21300000, guid: 67082553a1dc1bf49bd7d067861b0181, type: 3}
   videoClip: {fileID: 0}
   Backsound: {fileID: 0}

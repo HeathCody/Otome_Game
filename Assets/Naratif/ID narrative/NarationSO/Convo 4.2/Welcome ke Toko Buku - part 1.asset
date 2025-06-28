@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8682b05a0e5c0d47b3236bfc5b018e7, type: 3}
   m_Name: Welcome ke Toko Buku - part 1
   m_EditorClassIdentifier: 
-  tittle: 
+  tittle: Welcome ke Toko Buku - part 1
   listNarationData:
   - isHaveImage: 0
     sprBackground: {fileID: 0}

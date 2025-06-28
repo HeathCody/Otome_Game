@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb0766b848d84640a8551a37a981ffe, type: 3}
   m_Name: Toko buku - convo 2 CG
   m_EditorClassIdentifier: 
-  tittle: 
+  tittle: Toko buku - convo 2 CG
+  visualCinematic: 0
   sprCinematic: {fileID: 21300000, guid: 192af6fb9123ebc4ebe4ab1dcba9ee3b, type: 3}
   videoClip: {fileID: 0}
   Backsound: {fileID: 0}

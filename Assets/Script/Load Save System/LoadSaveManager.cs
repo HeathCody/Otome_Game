@@ -177,8 +177,6 @@ public class LoadSaveManager : MonoBehaviour
             Debug.LogError("Error on Save Player Data " + fullpathGalleryData + "\n" + ex);
         }
         onLoadSave = false;
-
-        StartCoroutine(CaptureAndSaveScreenshot(indexFile));
     }
     public static void Register(ILoadSaveObjects obj)
     {
@@ -190,30 +188,6 @@ public class LoadSaveManager : MonoBehaviour
         if (listLoadSaveObjects.Contains(obj)) listLoadSaveObjects.Remove(obj);
     }
     #endregion
-
-    private IEnumerator CaptureAndSaveScreenshot(int indexFile)
-    {
-        yield return new WaitForEndOfFrame();
-
-        Texture2D screenshot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
-        screenshot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
-        screenshot.Apply();
-
-        byte[] bytes = screenshot.EncodeToPNG();
-
-        string fileName = $"save_screenshot-{indexFile}.png";
-        string fullPath = Path.Combine(Application.persistentDataPath, fileName);
-
-        try
-        {
-            File.WriteAllBytes(fullPath, bytes);
-            Debug.Log($"Screenshot saved to {fullPath}");
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError("Failed to save screenshot: " + ex);
-        }
-    }
     #region File Path
     [FoldoutGroup("File Path")][SerializeField] private string DirectoryPlayerData;
     [FoldoutGroup("File Path")][SerializeField] private string fileNamePlayerDataHeader;

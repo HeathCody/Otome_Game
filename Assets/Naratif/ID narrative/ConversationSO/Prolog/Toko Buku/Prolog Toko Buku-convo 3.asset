@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
   m_Name: Prolog Toko Buku-convo 3
   m_EditorClassIdentifier: 
-  tittle: 
+  tittle: Prolog Toko Buku-convo 3
   sprBackgroundDialogue: {fileID: 21300000, guid: 192af6fb9123ebc4ebe4ab1dcba9ee3b, type: 3}
   Backsound: {fileID: 0}
   ListDialogue:

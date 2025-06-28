@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429099a24f58b93469f7cbd95f493473, type: 3}
   m_Name: Toko Buku - Convo 5
   m_EditorClassIdentifier: 
-  tittle: MC nanya soal Dian
+  tittle: Toko Buku - Convo 5
   listChoice:
   - ChoiceTittle: Kamu siapa?
     eventSelectChoice: 1

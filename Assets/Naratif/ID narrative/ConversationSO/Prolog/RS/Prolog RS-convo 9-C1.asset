@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cee33902824be64da095dfeb893f1fe, type: 3}
   m_Name: Prolog RS-convo 9-C1
   m_EditorClassIdentifier: 
-  tittle: 
+  tittle: Prolog RS-convo 9-C1
   sprBackgroundDialogue: {fileID: 21300000, guid: 6a5a8f505ae13f94ab7c970925ca0b9e, type: 3}
   Backsound: {fileID: 0}
   ListDialogue:

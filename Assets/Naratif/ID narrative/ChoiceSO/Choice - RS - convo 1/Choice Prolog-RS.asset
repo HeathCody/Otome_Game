@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 429099a24f58b93469f7cbd95f493473, type: 3}
   m_Name: Choice Prolog-RS
   m_EditorClassIdentifier: 
-  tittle: MC liat buku U-tale yang dibawa kakek
+  tittle: Choice Prolog-RS
   listChoice:
   - ChoiceTittle: Bukunya kelihatan bagus.
     eventSelectChoice: 1

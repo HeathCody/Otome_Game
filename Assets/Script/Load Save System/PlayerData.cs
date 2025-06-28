@@ -5,6 +5,7 @@ public class PlayerData
     public int indexData;
     public string currentEventTittle;
     public string currentEventSection;
+    public string whatChapter;
     public EventGame currentEventGame;
     public int ReputationNetral;
     public int ReputationChar1;
