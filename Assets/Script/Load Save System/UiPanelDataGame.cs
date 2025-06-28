@@ -23,6 +23,7 @@ public class UiPanelDataGame : MonoBehaviour
     private int playerDataIndex;
     private int indexListPlayer;
     private int indexButton;
+    private Texture2D cachedScreenshot;
     void Start()
     {
         isLoadGame = false;

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Pintu otw reveal 1
   m_EditorClassIdentifier: 
   tittle: 
+  visualCinematic: 1
   sprCinematic: {fileID: 0}
   videoClip: {fileID: 32900000, guid: 7c28964188d324247b83060dd0b0a906, type: 3}
   Backsound: {fileID: 0}

@@ -18,7 +18,8 @@ MonoBehaviour:
     sprBackground: {fileID: 0}
     Naration: <color=#FCEF91><b><i>...Toko Buku The Guardian akan mengabulkan permintaanmu.</i></b></color>
   Backsound: {fileID: 0}
-  SFXMusic: {fileID: 8300000, guid: 07dbafe7e04f64b4688ce38c4280c0da, type: 3}
+  SFXMusic: {fileID: 0}
+  strChapter: 
   eventEndCinematic: 1
   conversation: {fileID: 11400000, guid: b93c8985dfcf72846a4c6c55f1620c92, type: 2}
   choice: {fileID: 0}

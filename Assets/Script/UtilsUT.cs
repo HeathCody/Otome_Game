@@ -3,6 +3,7 @@ using UnityEngine;
 public enum MainMenuState { MainMenu, SavedFile, Setting, Gallery, GalleryImage }
 public enum EventGame { None, OpenConversation, OpenChoice, OpenCinematic, OpenMap, OpenMinigame, OpenNaration }
 public enum EffectEvent { None, FadeIn, FadeOut, FadeFromBlack, FadeToBlack, FlashIn, FlashOut }
+public enum CinematicVisual { Sprite, videoClip }
 [System.Flags]
 public enum BitMaskReputation
 {

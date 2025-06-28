@@ -18,7 +18,8 @@ MonoBehaviour:
     sprBackground: {fileID: 0}
     Naration: <color=#FCEF91><b><i>Jika rasa ingin tahu menguasai hatimu...</i></b></color>
   Backsound: {fileID: 0}
-  SFXMusic: {fileID: 8300000, guid: 07dbafe7e04f64b4688ce38c4280c0da, type: 3}
+  SFXMusic: {fileID: 0}
+  strChapter: 
   eventEndCinematic: 6
   conversation: {fileID: 0}
   choice: {fileID: 0}

@@ -9,6 +9,8 @@ public class UiCinematic : MonoBehaviour
 {
     [SerializeField] private GameplayManager gm;
     [SerializeField] private GameObject panelCinematic;
+    [SerializeField] private GameObject panelCinematicImg;
+    [SerializeField] private GameObject panelCinematicVid;
     [SerializeField] private Image imgCinematic;
     [SerializeField] private VideoPlayer vidCinematic;
     [SerializeField] private Button btnCinematic;
@@ -25,16 +27,23 @@ public class UiCinematic : MonoBehaviour
     }
     public void OpenCinematic(CinematicSO cinemaSo)
     {
+        imgCinematic.sprite = null;
+        vidCinematic.clip = null;
         currentCinematic = cinemaSo;
         //cek apakah video ato sprite
-        if(currentCinematic.sprCinematic != null)
+        switch (currentCinematic.visualCinematic)
         {
-            imgCinematic.sprite = currentCinematic.sprCinematic;
-        }
-        else if (currentCinematic.videoClip != null)
-        {
-            vidCinematic.clip = currentCinematic.videoClip;
-            vidCinematic.Play();
+            case CinematicVisual.Sprite:
+                imgCinematic.sprite = currentCinematic.sprCinematic;
+                panelCinematicImg.SetActive(true);
+                panelCinematicVid.SetActive(false);
+                break;
+            case CinematicVisual.videoClip:
+                panelCinematicVid.SetActive(true);
+                panelCinematicImg.SetActive(false);
+                vidCinematic.clip = currentCinematic.videoClip;
+                vidCinematic.Play();
+                break;
         }
         panelCinematic.SetActive(true);
         MusicManager.Instance.PlayBacksound();

@@ -6,8 +6,9 @@ using UnityEngine.Video;
 public class CinematicSO : ScriptableObject
 {
     public string tittle;
-    public Sprite sprCinematic;
-    public VideoClip videoClip;
+    public CinematicVisual visualCinematic;
+    [ShowIf("visualCinematic", CinematicVisual.Sprite)] public Sprite sprCinematic;
+    [ShowIf("visualCinematic", CinematicVisual.videoClip)] public VideoClip videoClip;
     public AudioClip Backsound;
     public AudioClip SFXMusic;
     public string strChapter;
