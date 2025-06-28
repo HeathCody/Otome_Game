@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 589add5694dfedb46ad8d4bc7abc62e1, type: 2}
   eventEndDialogue: 2
   conversation: {fileID: 0}
-  choice: {fileID: 0}
+  choice: {fileID: 11400000, guid: 48a02a0e8b94c7146bcf977f2a69943c, type: 2}
   cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 

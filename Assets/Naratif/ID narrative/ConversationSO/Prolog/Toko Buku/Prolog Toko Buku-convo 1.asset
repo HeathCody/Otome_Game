@@ -19,11 +19,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b0767b78ca2a18c4f8acebc854cd60e2, type: 2}
   - {fileID: 11400000, guid: e286e718a3faaba4ab222770e5eb441e, type: 2}
   - {fileID: 11400000, guid: 6a1b8966bc92f6f46979d18a63e9029d, type: 2}
-  eventEndDialogue: 0
-  conversation: {fileID: 0}
+  eventEndDialogue: 1
+  conversation: {fileID: 11400000, guid: 51158d479e5453e41b3ec3fcfd2cb2f8, type: 2}
   choice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 
-  effectStartEvent: 0
+  effectStartEvent: 1
   effectEndEvent: 0

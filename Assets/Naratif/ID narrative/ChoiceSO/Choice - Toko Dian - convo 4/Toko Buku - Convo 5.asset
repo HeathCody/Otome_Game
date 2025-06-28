@@ -17,15 +17,15 @@ MonoBehaviour:
   - ChoiceTittle: Kamu siapa?
     eventSelectChoice: 1
     listReputation: []
-    conversation: {fileID: 0}
+    conversation: {fileID: 11400000, guid: a88cfcd10104f15418a7b74d7e13ddb0, type: 2}
     choice: {fileID: 0}
     cinematic: {fileID: 0}
     naration: {fileID: 0}
     minigameName: 
-  - ChoiceTittle: Aku amu komplain
+  - ChoiceTittle: Aku mau komplain.
     eventSelectChoice: 1
     listReputation: []
-    conversation: {fileID: 0}
+    conversation: {fileID: 11400000, guid: a101b4ed66ab0884eb922b023376650f, type: 2}
     choice: {fileID: 0}
     cinematic: {fileID: 0}
     naration: {fileID: 0}

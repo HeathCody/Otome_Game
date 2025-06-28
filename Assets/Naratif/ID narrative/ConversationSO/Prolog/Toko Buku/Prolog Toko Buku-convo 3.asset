@@ -21,8 +21,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 32d2e2af61f7da2489c33ebb253cc032, type: 2}
   - {fileID: 11400000, guid: 8e2431f4cda0b38459e77c6e4c9721ed, type: 2}
   - {fileID: 11400000, guid: 2c937f72faa55fc40ace3163e2333f15, type: 2}
-  eventEndDialogue: 0
-  conversation: {fileID: 0}
+  eventEndDialogue: 1
+  conversation: {fileID: 11400000, guid: d9c1177209b64d8409df3dc4da30e637, type: 2}
   choice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 0}

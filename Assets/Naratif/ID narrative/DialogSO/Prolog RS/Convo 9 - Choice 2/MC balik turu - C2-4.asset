@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Judul: MC kabur dulu
   Section: 0
-  BgDialogue: {fileID: 0}
+  BgDialogue: {fileID: 21300000, guid: e8c8d2e1fc08a9546914ca30a25c2bcd, type: 3}
   ListCharTalk: []
   CharName: 
-  Dialogue: <i>Mantra yang menarikku untuk pergi jauh dari kehidupan ini--untuk meraih
-    pintu itu.</i>
+  Dialogue: <i>Mantra itu terus mengganggu. Dia terus menarikku untuk pergi jauh
+    dari kehidupan ini--untuk meraih pintu itu.</i>
   SprBoxChar: {fileID: 0}
   SFXMusic: {fileID: 0}

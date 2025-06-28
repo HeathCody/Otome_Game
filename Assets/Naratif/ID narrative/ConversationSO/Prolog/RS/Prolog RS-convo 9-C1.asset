@@ -17,11 +17,13 @@ MonoBehaviour:
   Backsound: {fileID: 0}
   ListDialogue:
   - {fileID: 11400000, guid: 0f576fe77ffc8154184acbaf67982aba, type: 2}
+  - {fileID: 11400000, guid: 6490c24a860c3eb4eb0264f9a259ff43, type: 2}
+  - {fileID: 11400000, guid: e0b13c6b29e6b674ba98eb449c2b5658, type: 2}
   eventEndDialogue: 1
   conversation: {fileID: 11400000, guid: e903d94e0a0140743bdfff55cf45f41f, type: 2}
   choice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 
-  effectStartEvent: 0
+  effectStartEvent: 1
   effectEndEvent: 0

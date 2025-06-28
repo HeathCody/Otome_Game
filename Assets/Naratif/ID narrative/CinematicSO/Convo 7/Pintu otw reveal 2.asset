@@ -15,8 +15,9 @@ MonoBehaviour:
   tittle: 
   sprCinematic: {fileID: 0}
   videoClip: {fileID: 32900000, guid: e0c59958bfbf21f408d4f77f27353e93, type: 3}
-  Backsound: {fileID: 8300000, guid: cbaf5487c4da2104b93b60d3095ca66f, type: 3}
-  SFXMusic: {fileID: 0}
+  Backsound: {fileID: 0}
+  SFXMusic: {fileID: 8300000, guid: 8e56238036f04f34e919f61ff9c2bfc9, type: 3}
+  strChapter: 
   eventEndCinematic: 1
   isCinematicUnlock: 0
   nextConversation: {fileID: 11400000, guid: 6e84837fca7fcb24c917fe6b077004b4, type: 2}

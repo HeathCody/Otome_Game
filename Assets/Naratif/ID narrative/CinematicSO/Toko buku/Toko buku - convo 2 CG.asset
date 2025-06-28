@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fb0766b848d84640a8551a37a981ffe, type: 3}
-  m_Name: Pintu otw reveal 1
+  m_Name: Toko buku - convo 2 CG
   m_EditorClassIdentifier: 
   tittle: 
-  sprCinematic: {fileID: 0}
-  videoClip: {fileID: 32900000, guid: 7c28964188d324247b83060dd0b0a906, type: 3}
+  sprCinematic: {fileID: 21300000, guid: 192af6fb9123ebc4ebe4ab1dcba9ee3b, type: 3}
+  videoClip: {fileID: 0}
   Backsound: {fileID: 0}
   SFXMusic: {fileID: 0}
   strChapter: 
-  eventEndCinematic: 3
+  eventEndCinematic: 1
   isCinematicUnlock: 0
-  nextConversation: {fileID: 0}
+  nextConversation: {fileID: 11400000, guid: 2d1316955f31cfe4b8035b87e30c64dd, type: 2}
   openChoice: {fileID: 0}
-  cinematic: {fileID: 11400000, guid: f6c8e2e3512732a4bbb2d4d5fd439230, type: 2}
+  cinematic: {fileID: 0}
   naration: {fileID: 0}
   minigameName: 
-  effectStartEvent: 0
+  effectStartEvent: 1
   effectEndEvent: 0

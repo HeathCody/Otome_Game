@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tittle: 
   sprBackgroundDialogue: {fileID: 21300000, guid: 93ff37a023643e0418110d8fe5b48701, type: 3}
-  Backsound: {fileID: 0}
+  Backsound: {fileID: 8300000, guid: 8e56238036f04f34e919f61ff9c2bfc9, type: 3}
   ListDialogue:
   - {fileID: 11400000, guid: 324cfad5e20e56247bb99d72028b5905, type: 2}
   - {fileID: 11400000, guid: 9780010b8c463524c8eb8556f2159a0e, type: 2}
@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 76dcd2861aab77f4f9fe03113eb4da08, type: 2}
   - {fileID: 11400000, guid: a8144c8c74a586247b1a0b9459fbb341, type: 2}
   eventEndDialogue: 1
-  conversation: {fileID: 0}
+  conversation: {fileID: 11400000, guid: 3c47be344d508604ba7601ef92b68713, type: 2}
   choice: {fileID: 0}
   cinematic: {fileID: 0}
   naration: {fileID: 0}

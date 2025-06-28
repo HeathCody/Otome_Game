@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Judul: MC kabur dulu
   Section: 0
-  BgDialogue: {fileID: 0}
+  BgDialogue: {fileID: 21300000, guid: 6a5a8f505ae13f94ab7c970925ca0b9e, type: 3}
   ListCharTalk: []
   CharName: 
-  Dialogue: <i>Pintu itu memancarkan aura hangat, rasanya menunggu keputusanku.</i>
+  Dialogue: <i>Pintu itu memancarkan aura hangat. Rasanya dia sudah menunggu keputusanku.</i>
   SprBoxChar: {fileID: 0}
   SFXMusic: {fileID: 0}

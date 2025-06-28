@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tittle: 
   sprBackgroundDialogue: {fileID: 21300000, guid: 1166b0467d418514c9e79f31b60ceb6b, type: 3}
-  Backsound: {fileID: 8300000, guid: 8e56238036f04f34e919f61ff9c2bfc9, type: 3}
+  Backsound: {fileID: 0}
   ListDialogue:
   - {fileID: 11400000, guid: 263a06bf39b1b9c449e7f4ca4b01e28e, type: 2}
   - {fileID: 11400000, guid: fd598faebf3474943bf97092780e1951, type: 2}
   - {fileID: 11400000, guid: 7c5a45c90f15cc6439b76f8cbdfe575c, type: 2}
-  eventEndDialogue: 0
-  conversation: {fileID: 0}
+  eventEndDialogue: 3
+  conversation: {fileID: 11400000, guid: 2d1316955f31cfe4b8035b87e30c64dd, type: 2}
   choice: {fileID: 0}
-  cinematic: {fileID: 0}
+  cinematic: {fileID: 11400000, guid: 99ad8bb73b7be6b4b850415a1ebdbd15, type: 2}
   naration: {fileID: 0}
   minigameName: 
-  effectStartEvent: 5
+  effectStartEvent: 1
   effectEndEvent: 0

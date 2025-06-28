@@ -19,6 +19,6 @@ MonoBehaviour:
   CharName: 
   Dialogue: "<i>Lalu, ceritanya berlanjut. Putra Mahkota itu terlahir dengan tanda
     kutukan bisu yang melingkar lehernya\u2014kutukan yang tak dapat disembuhkan,
-    bahkan tabib terhebat sekalipun.</i>"
+    bahkan oleh tabib terhebat sekalipun.</i>"
   SprBoxChar: {fileID: 0}
   SFXMusic: {fileID: 8300000, guid: 15bf9d549b6e3cb4185dbcecc7b6fd60, type: 3}
