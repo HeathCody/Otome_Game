@@ -6,8 +6,6 @@ public class UIMainMenu : MonoBehaviour
     public Sprite[] imgBook;
     public Image bookPanel;
     public string Chapter = "Chapter 0";
-
-    public LoadSaveManager LoadSaveManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +15,7 @@ public class UIMainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Chapter = LoadSaveManager.loadSaveChapter;
+        Chapter = LoadSaveManager.instance.loadSaveChapter;
         bookChange();
     }
 
@@ -36,6 +34,6 @@ public class UIMainMenu : MonoBehaviour
 
     public void changeEmergency()
     {
-        Chapter = "Chapter 1";
+        LoadSaveManager.instance.loadSaveChapter = "Chapter 1";
     }
 }

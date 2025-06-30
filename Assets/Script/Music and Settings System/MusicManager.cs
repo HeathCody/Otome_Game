@@ -33,9 +33,7 @@ public class MusicManager : MonoBehaviour
     }
 
     private void Start()
-    {
-        PlayBacksoundMainMenu();
-        
+    {        
         // Inisialisasi slider dengan volume AudioSource saat start
         uiSettings.musicVolumeSld.value = backsoundSrc.volume;
         uiSettings.musicVolumeSld.onValueChanged.AddListener(UpdateVolumeMusic);
@@ -52,6 +50,12 @@ public class MusicManager : MonoBehaviour
             dialogueManager = GameObject.Find("GameplayManager").GetComponent<DialogueManager>();
             uiNaration = GameObject.Find("Ui-Naration").GetComponent<UiNaration>();
             uiCinematic = GameObject.Find("Ui-Cinematic").GetComponent<UiCinematic>();
+        }
+        
+        if (scene.name == "Main-Menu")
+        {
+            backsoundSrc.Stop();
+            PlayBacksoundMainMenu();
         }
     }
 

@@ -18,6 +18,7 @@ public class UiDialogue : MonoBehaviour
     [SerializeField] private TextMeshProUGUI txtCharTalkName;
     [SerializeField] public TextMeshProUGUI txtDialogue;
     [SerializeField] private DialogSO currentDialogue;
+    [SerializeField] private UiGameplay uiGameplay;
 
     //efek
     public CanvasGroup canvasGroup;
@@ -197,14 +198,22 @@ public class UiDialogue : MonoBehaviour
     // Update is called once per frame
     public void OnDialogueClick()
     {
-        if (txtDialogue.text == dialogueManager.currentDialogue.Dialogue)
+        if(uiGameplay.isDialogActive == true)
         {
-            dialogueManager.NextDialogue();
+            if (txtDialogue.text == dialogueManager.currentDialogue.Dialogue)
+            {
+                dialogueManager.NextDialogue();
+            }
+            else
+            {
+                StopAllCoroutines();
+                txtDialogue.text = dialogueManager.currentDialogue.Dialogue;
+            }
         }
         else
         {
-            StopAllCoroutines();
-            txtDialogue.text = dialogueManager.currentDialogue.Dialogue;
+            uiGameplay.ButtonOpenDialog();
         }
+
     }
 }

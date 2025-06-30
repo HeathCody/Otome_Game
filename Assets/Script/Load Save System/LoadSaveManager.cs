@@ -16,7 +16,7 @@ public class LoadSaveManager : MonoBehaviour
     [FoldoutGroup("Load Save Manager")][SerializeField] public bool dataIsReady = false;
     [FoldoutGroup("Load Save Manager")] public bool isFromLoadManager = false;
     [FoldoutGroup("Load Save Manager")] public bool onLoadSave;
-    [FoldoutGroup("Load Save Manager")] public string loadSaveChapter;
+    [FoldoutGroup("Load Save Manager")] public string loadSaveChapter = "Chapter 1";
     private void Awake()
     {
         if (instance != null)
