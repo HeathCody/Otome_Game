@@ -27,4 +27,4 @@ MonoBehaviour:
   naration: {fileID: 0}
   minigameName: 
   effectStartEvent: 0
-  effectEndEvent: 0
+  effectEndEvent: 2

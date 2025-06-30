@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Judul: MC ngomong sama Dian
   Section: 0
-  BgDialogue: {fileID: 21300000, guid: 93ff37a023643e0418110d8fe5b48701, type: 3}
+  BgDialogue: {fileID: 0}
   ListCharTalk: []
-  CharName: Lelaki Tak Dikenal
-  Dialogue: Kau ingin masuk atau tidak, tutup pintunya! <i>Bisa dimengerti?</i>
-  SprBoxChar: {fileID: 0}
+  CharName: Kamu
+  Dialogue: M-maaf!
+  SprBoxChar: {fileID: 21300000, guid: 79a36ab897209904f9f782b82e8ffc4d, type: 3}
   SFXMusic: {fileID: 0}
