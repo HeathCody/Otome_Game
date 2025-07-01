@@ -1,0 +1,10 @@
+# ninja log v5
+40	12466	7730312784749872	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	179e7323b7616ec2
+49	13049	7730312790528262	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	83d63bb86e55ba36
+11	13092	7730312791056851	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	fb67a80ddc7da25f
+1	13566	7730312795627295	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	647a5f5bc3600c4
+32	13687	7730312796988787	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	65c0cf246575b2ff
+19	13777	7730312797947318	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	db03e9eeaa4a1049
+13049	14876	7730312809075248	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	55a505996a83db4f
+12488	14932	7730312809661951	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e7af773cffbc8def
+14932	15348	7730312813806023	F:/Otodidak/game dev/Otome Game/Otome_Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2s1t5g2p/obj/arm64-v8a/libgame.so	73608b321614f8fa

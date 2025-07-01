@@ -1,0 +1,1 @@
+F:\Otodidak\game dev\Otome Game\Otome_Game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\2s1t5g2p\obj\arm64-v8a

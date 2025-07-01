@@ -1,0 +1,2 @@
+F:\Otodidak\game dev\Otome Game\Otome_Game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+F:\Otodidak\game dev\Otome Game\Otome_Game\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
