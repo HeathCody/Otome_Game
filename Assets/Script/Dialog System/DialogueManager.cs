@@ -11,7 +11,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float durationEffect = 1f;
     Queue queueDialogue = new Queue();
     public DialogSO currentDialogue;
-    [SerializeField] private Efek efek;
 
     void Awake()
     {

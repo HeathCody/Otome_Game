@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
 
 public class UiPanelDataGame : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class UiPanelDataGame : MonoBehaviour
     private int playerDataIndex;
     private int indexListPlayer;
     private int indexButton;
+
     void Start()
     {
         isLoadGame = true;

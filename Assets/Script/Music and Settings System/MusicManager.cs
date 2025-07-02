@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -76,21 +77,55 @@ public class MusicManager : MonoBehaviour
     }
     public void PlayBacksound()
     {
+        AudioClip newClip = null;
+
         switch (gameplayManager.currentEventGame)
         {
             case EventGame.OpenConversation:
-                backsoundSrc.clip = dialogueManager.currentConversation.Backsound;
+                newClip = dialogueManager.currentConversation.Backsound;
                 break;
             case EventGame.OpenNaration:
-                backsoundSrc.clip = uiNaration.currentNaration.Backsound;
+                newClip = uiNaration.currentNaration.Backsound;
                 break;
             case EventGame.OpenCinematic:
-                backsoundSrc.clip = uiCinematic.currentCinematic.Backsound;
+                newClip = uiCinematic.currentCinematic.Backsound;
                 break;
         }
-        
-        backsoundSrc.Play();
+
+        if (newClip != null && newClip != backsoundSrc.clip)
+        {
+            StartCoroutine(FadeToNewClip(newClip, 1f)); // 1f = durasi fade (bisa kamu ubah)
+        }
     }
+
+
+    IEnumerator FadeToNewClip(AudioClip newClip, float duration)
+    {
+        float startVolume = backsoundSrc.volume;
+
+        // Fade Out
+        for (float t = 0; t < duration; t += Time.deltaTime)
+        {
+            backsoundSrc.volume = Mathf.Lerp(startVolume, 0, t / duration);
+            yield return null;
+        }
+
+        backsoundSrc.volume = 0;
+        backsoundSrc.Stop();
+        backsoundSrc.clip = newClip;
+        backsoundSrc.Play();
+
+        // Fade In
+        for (float t = 0; t < duration; t += Time.deltaTime)
+        {
+            backsoundSrc.volume = Mathf.Lerp(0, startVolume, t / duration);
+            yield return null;
+        }
+
+        backsoundSrc.volume = startVolume;
+    }
+
+
     public void PlaySFX()
     {
         switch (gameplayManager.currentEventGame)

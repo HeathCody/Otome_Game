@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class UiButtonGameData : MonoBehaviour
     [SerializeField] private Button btnLoad;
     [SerializeField] private Image imgButton;
     [SerializeField] private Sprite sprDefaultButton;
+
 
     public void SetButtonData(string filename)
     {
@@ -24,6 +26,5 @@ public class UiButtonGameData : MonoBehaviour
     public void SetAsDefaultButton()
     {
         txtFileName.text = "No Data";
-        imgButton.sprite = sprDefaultButton;
     }
 }
